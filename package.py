@@ -1,0 +1,1 @@
+# inspired by npm's package.json
