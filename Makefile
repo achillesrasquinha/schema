@@ -11,6 +11,8 @@ install:
 clean:
 	find $(BASEDIR) | grep -E "__pycache__|.pyc" | xargs rm -rf
 
+	clear
+
 test:
 	pytest $(SOURCEDIR)
 

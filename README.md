@@ -1,4 +1,5 @@
 <div align="center">
+    <img src=".github/logo.png" width="200">
     <h1>Schema</h1>
 </div>
 
