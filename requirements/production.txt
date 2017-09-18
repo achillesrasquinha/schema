@@ -1,1 +1,3 @@
 six
+requests
+tqdm

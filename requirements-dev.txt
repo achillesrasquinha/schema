@@ -1,2 +1,5 @@
+sphinx
 six
+requests
+tqdm
 pytest
