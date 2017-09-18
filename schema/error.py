@@ -1,6 +1,6 @@
 MESSAGES = \
 {
-    'TypeError': 'Expected {expected} object, recieved {recieved} instaead.'
+    'TypeError': 'Expected {expected} object, recieved {recieved} instead.'
 }
 
 def raise_not_implemented_error():
