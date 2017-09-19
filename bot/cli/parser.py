@@ -10,9 +10,10 @@ class ArgumentParser(argparse.ArgumentParser):
 
         if 'arguments' in self.config:
             for argument in self.config['arguments']:
-                self.add_argument(
-                    name = argument['name'],
-                    help = argument['help']
+                self.add_argument(*argument['name'],
+                    type    = argument['type'],
+                    default = argument['default'],
+                    help    = argument['help']
                 )
 
     def parse(self, argv = None):

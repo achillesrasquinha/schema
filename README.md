@@ -22,6 +22,8 @@
 [
     {
         "name": "Thing",
+        "desc": "The most generic type of item.",
+        "type": "core",
         "children":
         [
             {

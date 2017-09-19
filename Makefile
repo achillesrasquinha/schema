@@ -1,6 +1,12 @@
+.PHONY: build
+
+PYTHON   ?= python
+
 BASEDIR   = $(realpath .)
 PACKAGE   = schema
 SOURCEDIR = $(realpath $(PACKAGE))
+
+MODELSDIR = $(realpath models)
 
 clean:
 	python setup.py clean
@@ -13,7 +19,7 @@ install:
 
 	pip install -r requirements-dev.txt
 
-	python setup.py install
+	$(PYTHON) setup.py install
 
 	make clean
 
@@ -21,6 +27,9 @@ test:
 	make install
 
 	pytest $(SOURCEDIR)
+
+build:
+	$(PYTHON) -B -m bot --dest $(MODELSDIR)
 
 all:
 	make install test clean

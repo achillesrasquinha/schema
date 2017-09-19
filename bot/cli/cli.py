@@ -2,10 +2,22 @@
 from bot.cli.parser import ArgumentParser
 from bot            import SchemaBot
 
+CONFIG = \
+{
+    'arguments':
+    [
+        {
+               'name': ['-d', '--dest'],
+               'type': str,
+            'default': '.',
+               'help': 'directory path to save'
+        }
+    ]
+}
+
 def main(argv = None):
-    parser  = ArgumentParser()
+    parser  = ArgumentParser(CONFIG)
     args    = parser.parse(argv)
 
-    if not argv:
-        bot = SchemaBot()
-        bot.run()
+    bot     = SchemaBot()
+    bot.run(savedir = args.dest)

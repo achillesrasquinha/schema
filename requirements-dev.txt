@@ -1,6 +1,6 @@
 setuptools
 twine
-beautifulsoup4
+addict
 Sphinx
 six
 requests
