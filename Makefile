@@ -2,19 +2,25 @@ BASEDIR   = $(realpath .)
 PACKAGE   = schema
 SOURCEDIR = $(realpath $(PACKAGE))
 
+clean:
+	python setup.py clean
+
+	clear
+
 install:
 	cat requirements/*.txt          > requirements-dev.txt
 	cat requirements/production.txt > requirements.txt
 
 	pip install -r requirements-dev.txt
 
-clean:
-	python setup.py clean
+	python setup.py install
 
-	clear
+	make clean
 
 test:
-	pytest $(SOURCEDIR)
+	make install
+
+	python setup.py test
 
 all:
 	make install test clean

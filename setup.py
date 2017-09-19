@@ -1,5 +1,6 @@
 # imports - standard imports
 import sys, os, shutil
+from distutils.core          import Command
 from distutils.command.clean import clean as Clean
 
 # imports - third-party imports
@@ -14,7 +15,7 @@ class CleanCommand(Clean):
 
         basedir = os.path.abspath(os.path.dirname(__file__))
 
-        for dirname in ['.cache', 'dist', '{name}.egg-info'.format(name = package['name'])]:
+        for dirname in ['build', '.cache', 'dist', '{name}.egg-info'.format(name = package['name'])]:
             abspath = os.path.join(basedir, dirname)
             
             if os.path.exists(abspath):
@@ -30,8 +31,11 @@ class CleanCommand(Clean):
                 
             for dirname in dirnames:
                 if dirname in ['__pycache__']:
-                    abspath = os.path.join(dirpath, dirname)
+                    abspath = os.path.join(dirpath,  dirname)
                     shutil.rmtree(abspath)
+
+class TestCommand(Command):
+    pass
 
 def main(args = None):
     code = os.EX_OK

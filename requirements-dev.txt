@@ -1,8 +1,5 @@
-# deployment dependencies
 setuptools
 twine
-
-# bot dependencies
 beautifulsoup4
 Sphinx
 six
