@@ -3,11 +3,20 @@
     <h1>Schema</h1>
 </div>
 
+### Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+
+#### Installation
+
+#### Usage
 ```python
 >>> from schema import Schema
 >>> instance = Schema('Thing')
 ```
 
+JSON Schema
 ```json
 {
     "type": "Hospital",
@@ -31,3 +40,7 @@
         ]
     },
 }
+```
+
+#### License
+This repository has been released under the [MIT License](LICENSE)
