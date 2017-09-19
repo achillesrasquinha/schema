@@ -7,7 +7,7 @@ with open('schema/__version__.py') as f:
     code = f.read()
     exec(code)
 
-def get_long_description(*files, dirpath = '.'):
+def get_long_description(*files):
     for f in files:
         pass
 
@@ -25,6 +25,11 @@ package = dict(
     # TODO: description
     description      = '',
     long_description = get_long_description('README.md', 'LICENSE'),
+    homepage         = 'https://github.com/achillesrasquinha/schema',
+    authors          = \
+    [
+        { 'name': 'Achilles Rasquinha', 'email': 'achillesrasquinha@gmail.com' }
+    ],
     license          = 'MIT',
     classifiers      = \
     [
