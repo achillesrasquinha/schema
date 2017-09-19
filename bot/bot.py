@@ -1,0 +1,2 @@
+class SchemaBot(object):
+    pass

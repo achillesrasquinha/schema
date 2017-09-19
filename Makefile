@@ -20,7 +20,7 @@ install:
 test:
 	make install
 
-	python setup.py test
+	pytest $(SOURCEDIR)
 
 all:
 	make install test clean

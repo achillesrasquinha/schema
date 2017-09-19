@@ -20,8 +20,8 @@ def check_type(instance, expected, raise_err = False, expected_name = None):
     else:
         return True
 
-def check_str(instance, raise_err = True):
-    check_type(instance, six.string_types, raise_err = raise_err, expected_name = 'str')
+def check_str(instance, raise_err = False):
+    return check_type(instance, six.string_types, raise_err = raise_err, expected_name = 'str')
 
-def check_mapping(instance, raise_err = True):
-    check_type(instance, Mapping, raise_err = raise_err, expected_name = 'dict-like')
+def check_mapping(instance, raise_err = False):
+    return check_type(instance, Mapping, raise_err = raise_err, expected_name = 'dict-like')

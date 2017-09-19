@@ -9,7 +9,7 @@ class Cache(object):
         self.location = assign_if_none(location, os.path.expanduser('~'))
         self.dirname  = assign_if_none(dirname,  '.schema')
 
-    def create():
+    def create(self, exists_ok = True):
         basepath = os.path.join(self.location, self.dirname)
 
-        makedirs(basepath, exists_ok = True)
+        makedirs(basepath, exists_ok = exists_ok)
