@@ -30,3 +30,9 @@ class Schema(MutableMapping):
 
     def __iter__(self):
         raise_not_implemented_error()
+
+    def __repr__(self):
+        raise_not_implemented_error()
+
+    def __str__(self):
+        raise_not_implemented_error()
