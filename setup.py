@@ -16,7 +16,9 @@ class CleanCommand(Clean):
 
         for dirname in ['.cache', 'dist', '{name}.egg-info'.format(name = package['name'])]:
             abspath = os.path.join(basedir, dirname)
-            shutil.rmtree(abspath)
+            
+            if os.path.exists(abspath):
+                shutil.rmtree(abspath)
 
         for dirpath, dirnames, filenames in os.walk(basedir):
             for filename in filenames:
