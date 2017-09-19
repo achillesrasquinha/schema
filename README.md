@@ -16,7 +16,27 @@
 >>> instance = Schema('Thing')
 ```
 
-JSON Schema
+#### JSON Schemas
+##### Tree
+```json
+[
+    {
+        "name": "Thing",
+        "children":
+        [
+            {
+                "name": "Action",
+                "children":
+                [
+                    
+                ]
+            }
+        ]
+    }
+]
+```
+
+##### Type
 ```json
 {
     "type": "Hospital",
