@@ -3,22 +3,21 @@ import os
 import json
 
 # imports - third-party imports
-import addict
 import requests
 
 def parse_tree(data):
-    tree = addict.Dict()
+    tree = dict()
     
     for key, value in data.items():
         if not key.startswith('@'):
             if   key == 'name':
-                tree.name     = value
+                tree['name']     = value
             elif key == 'description':
-                tree.desc     = value
+                tree['desc']     = value
             elif key == 'layer':
-                tree.type     = value
+                tree['type']     = value
             elif key == 'children':
-                tree.children = [parse_tree(child) for child in value]
+                tree['children'] = [parse_tree(child) for child in value]
 
     return tree
 
