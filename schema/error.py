@@ -3,6 +3,9 @@ MESSAGES = \
     'TypeError': 'Expected {expected} object, recieved {recieved} instead.'
 }
 
+class SchemaError(Exception):
+    pass
+
 def raise_not_implemented_error():
     raise NotImplementedError
 
