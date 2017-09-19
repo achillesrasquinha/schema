@@ -11,6 +11,12 @@ CONFIG = \
                'type': str,
             'default': '.',
                'help': 'directory path to save'
+        },
+        {
+               'name': ['-i', '--indent'],
+               'type': int,
+            'default': 4,
+               'help': 'indentation for JSON files'
         }
     ]
 }
@@ -20,4 +26,7 @@ def main(argv = None):
     args    = parser.parse(argv)
 
     bot     = SchemaBot()
-    bot.run(savedir = args.dest)
+    bot.run(
+        savedir = args.dest,
+        indent  = args.indent
+    )
