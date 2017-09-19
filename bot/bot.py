@@ -1,9 +1,12 @@
 # imports - standard imports
 import os
 import json
+import warnings
+from collections import deque
 
 # imports - third-party imports
 import requests
+from bs4 import BeautifulSoup
 
 def parse_tree(data, core = False):
     tree = dict()
@@ -31,6 +34,37 @@ def get_tree(core = False):
     else:
         response.raise_for_status()
 
+def save_data(tree, dirpath = '.', indent = 4):
+    # Breadth-First-Search (Level-Order-Search)
+    queue = deque()
+    queue.append(tree)
+
+    while len(queue):
+        node = queue.popleft()
+        meta = dict()
+        meta['type'] = node['name']
+
+        url  = 'http://schema.org/{name}'.format(name = meta['type'])
+        res  = requests.get(url)
+        if res.ok:
+            html  = res.content
+            soup  = BeautifulSoup(html, 'html.parser')
+
+            for i, table in enumerate(soup.find_all('table', class_ = 'definition-table')):
+                for j, tbody in enumerate(table.find_all('tbody')):
+                    pass
+            
+            path = os.path.join(dirpath, '{type_}.json'.format(type_ = meta['type']))
+
+            with open(path, mode = 'w') as f:
+                json.dump(meta, f, indent = indent)
+        else:
+            response.raise_for_status()
+
+        if 'children' in node:
+            for child in node['children']:
+                queue.append(child)
+
 class SchemaBot(object):
     def __init__(self):
         pass
@@ -42,5 +76,5 @@ class SchemaBot(object):
 
         with open(os.path.join(dirpath, 'tree.json'), mode = 'w') as f:
             json.dump(tree, f, indent = indent)
-            
-        
+
+        save_data(tree, dirpath = dirpath, indent = indent)

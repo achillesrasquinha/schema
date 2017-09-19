@@ -17,7 +17,9 @@ class Cache(object):
         self.location = assign_if_none(location, os.path.expanduser('~'))
         self.dirname  = assign_if_none(dirname,  '.schema')
 
-    def create(self, exists_ok = True, refresh = False, indent = 4):
+    def create(self, exists_ok = True, refresh = False, branch = None, indent = 4):
+        branch        = assign_if_none(branch, 'dev')
+        
         self.basepath = os.path.join(self.location, self.dirname)
         self.metapath = os.path.join(self.basepath, 'models')
 
@@ -25,7 +27,7 @@ class Cache(object):
 
         self.treepath = os.path.join(self.metapath, 'tree.json')
         if not os.path.exists(self.treepath) or refresh:
-            response = requests.get('https://cdn.rawgit.com/achillesrasquinha/schema/dev/models/tree.json')
+            response = requests.get('https://cdn.rawgit.com/achillesrasquinha/schema/{branch}/models/tree.json'.format(branch = branch))
             if  response.ok:
                 tree = response.json()
 
@@ -34,10 +36,12 @@ class Cache(object):
             else:
                 response.raise_for_status()
 
-    def get(self, type_, refresh = False):
+    def get(self, type_, branch = None, refresh = False):
+        branch   = assign_if_none(branch, 'dev')
+
         typepath = os.path.join(self.metapath, type_)
         if not os.path.exists(typepath) or refresh:
-            response = requests.get('https://cdn.rawgit.com/achillesrasquinha/schema/dev/models/{type_}.json'.format(type_ = type_))
+            response = requests.get('https://cdn.rawgit.com/achillesrasquinha/schema/{branch}/models/{type_}.json'.format(branch = branch, type_ = type_))
             if response.ok:
                 data = response.json()
 
