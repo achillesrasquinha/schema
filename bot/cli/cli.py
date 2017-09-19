@@ -2,10 +2,10 @@
 from bot.cli.parser import ArgumentParser
 from bot            import SchemaBot
 
-def main(args = None):
+def main(argv = None):
     parser  = ArgumentParser()
-    args    = parser.parse(args)
+    args    = parser.parse(argv)
 
-    if not len(args):
+    if not argv:
         bot = SchemaBot()
         bot.run()

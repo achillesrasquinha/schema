@@ -9,6 +9,5 @@ class SchemaBot(object):
         response = requests.get('http://schema.org/docs/tree.jsonld')
         if  response.ok:
             meta = response.json()
-            
         else:
             response.raise_for_status()
