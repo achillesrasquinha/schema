@@ -42,3 +42,5 @@ class SchemaBot(object):
 
         with open(os.path.join(dirpath, 'tree.json'), mode = 'w') as f:
             json.dump(tree, f, indent = indent)
+            
+        

@@ -1,6 +1,6 @@
 setuptools
 twine
-addict
+ipython
 Sphinx
 six
 requests
