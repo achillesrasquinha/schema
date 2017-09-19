@@ -14,7 +14,9 @@ class Schema(MutableMapping):
             check_mapping(props, raise_err = True)
 
         self.cache = Cache()
-        self.cache.create()
+        self.cache.create(refresh = refresh)
+
+        self.store = self.cache.get(type_, refresh = refresh)
 
     def __getitem__(self, key):
         raise_not_implemented_error()
