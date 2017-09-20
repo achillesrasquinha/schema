@@ -1,3 +1,7 @@
 {
-    "type": "MapCategoryType"
+    "name": "MapCategoryType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

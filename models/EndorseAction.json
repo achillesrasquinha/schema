@@ -1,3 +1,16 @@
 {
-    "type": "EndorseAction"
+    "name": "EndorseAction",
+    "prop": [
+        {
+            "name": "endorsee",
+            "desc": "A sub property of participant. The person/organization being supported.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        }
+    ],
+    "from": {
+        "ReactAction": []
+    }
 }

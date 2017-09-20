@@ -1,3 +1,16 @@
 {
-    "type": "FollowAction"
+    "name": "FollowAction",
+    "prop": [
+        {
+            "name": "followee",
+            "desc": "A sub property of object. The person or organization being followed.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        }
+    ],
+    "from": {
+        "InteractAction": []
+    }
 }

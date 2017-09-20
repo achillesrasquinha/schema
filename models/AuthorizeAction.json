@@ -1,3 +1,18 @@
 {
-    "type": "AuthorizeAction"
+    "name": "AuthorizeAction",
+    "prop": [
+        {
+            "name": "recipient",
+            "desc": "A sub property of participant. The participant who is at the receiving end of the action.",
+            "type": [
+                "Person",
+                "Organization",
+                "ContactPoint",
+                "Audience"
+            ]
+        }
+    ],
+    "from": {
+        "AllocateAction": []
+    }
 }

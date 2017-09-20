@@ -1,3 +1,15 @@
 {
-    "type": "ReviewAction"
+    "name": "ReviewAction",
+    "prop": [
+        {
+            "name": "resultReview",
+            "desc": "A sub property of result. The review that resulted in the performing of the action.",
+            "type": [
+                "Review"
+            ]
+        }
+    ],
+    "from": {
+        "AssessAction": []
+    }
 }

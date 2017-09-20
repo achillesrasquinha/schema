@@ -1,3 +1,7 @@
 {
-    "type": "MovieRentalStore"
+    "name": "MovieRentalStore",
+    "prop": [],
+    "from": {
+        "Store": []
+    }
 }

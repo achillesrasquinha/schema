@@ -1,3 +1,7 @@
 {
-    "type": "OrderStatus"
+    "name": "OrderStatus",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

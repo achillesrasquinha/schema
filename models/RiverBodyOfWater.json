@@ -1,3 +1,7 @@
 {
-    "type": "RiverBodyOfWater"
+    "name": "RiverBodyOfWater",
+    "prop": [],
+    "from": {
+        "BodyOfWater": []
+    }
 }

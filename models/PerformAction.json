@@ -1,3 +1,30 @@
 {
-    "type": "PerformAction"
+    "name": "PerformAction",
+    "prop": [
+        {
+            "name": "entertainmentBusiness",
+            "desc": "A sub property of location. The entertainment business where the action occurred.",
+            "type": [
+                "EntertainmentBusiness"
+            ]
+        }
+    ],
+    "from": {
+        "PlayAction": [
+            {
+                "name": "audience",
+                "desc": "An intended audience, i.e. a group for whom something was created.",
+                "type": [
+                    "Audience"
+                ]
+            },
+            {
+                "name": "event",
+                "desc": "Upcoming or past event associated with this place, organization, or action.",
+                "type": [
+                    "Event"
+                ]
+            }
+        ]
+    }
 }

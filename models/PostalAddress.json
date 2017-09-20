@@ -1,3 +1,129 @@
 {
-    "type": "PostalAddress"
+    "name": "PostalAddress",
+    "prop": [
+        {
+            "name": "postOfficeBoxNumber",
+            "desc": "The post office box number for PO box addresses.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "streetAddress",
+            "desc": "The street address. For example, 1600 Amphitheatre Pkwy.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "addressCountry",
+            "desc": "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>.",
+            "type": [
+                "Country",
+                "Text"
+            ]
+        },
+        {
+            "name": "addressRegion",
+            "desc": "The region. For example, CA.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "postalCode",
+            "desc": "The postal code. For example, 94043.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "addressLocality",
+            "desc": "The locality. For example, Mountain View.",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "ContactPoint": [
+            {
+                "name": "serviceArea",
+                "desc": "The geographic area where the service is provided.",
+                "type": [
+                    "Place",
+                    "GeoShape",
+                    "AdministrativeArea"
+                ]
+            },
+            {
+                "name": "areaServed",
+                "desc": "The geographic area where a service or offered item is provided.",
+                "type": [
+                    "GeoShape",
+                    "Text",
+                    "Place",
+                    "AdministrativeArea"
+                ]
+            },
+            {
+                "name": "hoursAvailable",
+                "desc": "The hours during which this service or contact is available.",
+                "type": [
+                    "OpeningHoursSpecification"
+                ]
+            },
+            {
+                "name": "contactOption",
+                "desc": "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).",
+                "type": [
+                    "ContactPointOption"
+                ]
+            },
+            {
+                "name": "availableLanguage",
+                "desc": "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>",
+                "type": [
+                    "Text",
+                    "Language"
+                ]
+            },
+            {
+                "name": "telephone",
+                "desc": "The telephone number.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "email",
+                "desc": "Email address.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "contactType",
+                "desc": "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "productSupported",
+                "desc": "The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. \"iPhone\") or a general category of products or services (e.g. \"smartphones\").",
+                "type": [
+                    "Product",
+                    "Text"
+                ]
+            },
+            {
+                "name": "faxNumber",
+                "desc": "The fax number.",
+                "type": [
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

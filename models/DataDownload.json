@@ -1,3 +1,115 @@
 {
-    "type": "DataDownload"
+    "name": "DataDownload",
+    "prop": [],
+    "from": {
+        "MediaObject": [
+            {
+                "name": "uploadDate",
+                "desc": "Date when this media object was uploaded to this site.",
+                "type": [
+                    "Date"
+                ]
+            },
+            {
+                "name": "playerType",
+                "desc": "Player type required&#x2014;for example, Flash or Silverlight.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "height",
+                "desc": "The height of the item.",
+                "type": [
+                    "Distance",
+                    "QuantitativeValue"
+                ]
+            },
+            {
+                "name": "bitrate",
+                "desc": "The bitrate of the media object.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "requiresSubscription",
+                "desc": "Indicates if use of the media require a subscription  (either paid or free). Allowed values are <code>true</code> or <code>false</code> (note that an earlier version had 'yes', 'no').",
+                "type": [
+                    "Boolean"
+                ]
+            },
+            {
+                "name": "regionsAllowed",
+                "desc": "The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in <a href=\"http://en.wikipedia.org/wiki/ISO_3166\">ISO 3166 format</a>.",
+                "type": [
+                    "Place"
+                ]
+            },
+            {
+                "name": "contentSize",
+                "desc": "File size in (mega/kilo) bytes.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "embedUrl",
+                "desc": "A URL pointing to a player for a specific video. In general, this is the information in the <code>src</code> element of an <code>embed</code> tag and should not be the same as the content of the <code>loc</code> tag.",
+                "type": [
+                    "URL"
+                ]
+            },
+            {
+                "name": "width",
+                "desc": "The width of the item.",
+                "type": [
+                    "Distance",
+                    "QuantitativeValue"
+                ]
+            },
+            {
+                "name": "contentUrl",
+                "desc": "Actual bytes of the media object, for example the image file or video file.",
+                "type": [
+                    "URL"
+                ]
+            },
+            {
+                "name": "associatedArticle",
+                "desc": "A NewsArticle associated with the Media Object.",
+                "type": [
+                    "NewsArticle"
+                ]
+            },
+            {
+                "name": "productionCompany",
+                "desc": "The production company or studio responsible for the item e.g. series, video game, episode etc.",
+                "type": [
+                    "Organization"
+                ]
+            },
+            {
+                "name": "duration",
+                "desc": "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>.",
+                "type": [
+                    "Duration"
+                ]
+            },
+            {
+                "name": "encodesCreativeWork",
+                "desc": "The CreativeWork encoded by this media object.",
+                "type": [
+                    "CreativeWork"
+                ]
+            },
+            {
+                "name": "encodingFormat",
+                "desc": "mp3, mpeg4, etc.",
+                "type": [
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

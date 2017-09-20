@@ -1,3 +1,7 @@
 {
-    "type": "DanceGroup"
+    "name": "DanceGroup",
+    "prop": [],
+    "from": {
+        "PerformingGroup": []
+    }
 }

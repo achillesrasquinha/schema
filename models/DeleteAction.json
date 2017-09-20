@@ -1,3 +1,22 @@
 {
-    "type": "DeleteAction"
+    "name": "DeleteAction",
+    "prop": [],
+    "from": {
+        "UpdateAction": [
+            {
+                "name": "collection",
+                "desc": "A sub property of object. The collection target of the action.",
+                "type": [
+                    "Thing"
+                ]
+            },
+            {
+                "name": "targetCollection",
+                "desc": "A sub property of object. The collection target of the action.",
+                "type": [
+                    "Thing"
+                ]
+            }
+        ]
+    }
 }

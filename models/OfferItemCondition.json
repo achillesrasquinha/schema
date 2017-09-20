@@ -1,3 +1,7 @@
 {
-    "type": "OfferItemCondition"
+    "name": "OfferItemCondition",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

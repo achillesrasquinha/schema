@@ -1,3 +1,44 @@
 {
-    "type": "BusinessAudience"
+    "name": "BusinessAudience",
+    "prop": [
+        {
+            "name": "yearsInOperation",
+            "desc": "The age of the business.",
+            "type": [
+                "QuantitativeValue"
+            ]
+        },
+        {
+            "name": "yearlyRevenue",
+            "desc": "The size of the business in annual revenue.",
+            "type": [
+                "QuantitativeValue"
+            ]
+        },
+        {
+            "name": "numberOfEmployees",
+            "desc": "The number of employees in an organization e.g. business.",
+            "type": [
+                "QuantitativeValue"
+            ]
+        }
+    ],
+    "from": {
+        "Audience": [
+            {
+                "name": "audienceType",
+                "desc": "The target group associated with a given audience (e.g. veterans, car owners, musicians, etc.).",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "geographicArea",
+                "desc": "The geographic area associated with the audience.",
+                "type": [
+                    "AdministrativeArea"
+                ]
+            }
+        ]
+    }
 }

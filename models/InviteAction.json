@@ -1,3 +1,48 @@
 {
-    "type": "InviteAction"
+    "name": "InviteAction",
+    "prop": [
+        {
+            "name": "event",
+            "desc": "Upcoming or past event associated with this place, organization, or action.",
+            "type": [
+                "Event"
+            ]
+        }
+    ],
+    "from": {
+        "CommunicateAction": [
+            {
+                "name": "about",
+                "desc": "The subject matter of the content.",
+                "type": [
+                    "Thing"
+                ]
+            },
+            {
+                "name": "inLanguage",
+                "desc": "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>.",
+                "type": [
+                    "Language",
+                    "Text"
+                ]
+            },
+            {
+                "name": "recipient",
+                "desc": "A sub property of participant. The participant who is at the receiving end of the action.",
+                "type": [
+                    "Person",
+                    "Organization",
+                    "ContactPoint",
+                    "Audience"
+                ]
+            },
+            {
+                "name": "language",
+                "desc": "A sub property of instrument. The language used on this action.",
+                "type": [
+                    "Language"
+                ]
+            }
+        ]
+    }
 }

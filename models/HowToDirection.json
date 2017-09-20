@@ -1,3 +1,96 @@
 {
-    "type": "HowToDirection"
+    "name": "HowToDirection",
+    "prop": [
+        {
+            "name": "beforeMedia",
+            "desc": "A media object representing the circumstances before performing this direction.",
+            "type": [
+                "MediaObject"
+            ]
+        },
+        {
+            "name": "prepTime",
+            "desc": "The length of time it takes to prepare the items to be used in instructions or a direction, in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>.",
+            "type": [
+                "Duration"
+            ]
+        },
+        {
+            "name": "tool",
+            "desc": "A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.",
+            "type": [
+                "HowToTool",
+                "Text"
+            ]
+        },
+        {
+            "name": "performTime",
+            "desc": "The length of time it takes to perform instructions or a direction (not including time to prepare the supplies), in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>.",
+            "type": [
+                "Duration"
+            ]
+        },
+        {
+            "name": "totalTime",
+            "desc": "The total time required to perform instructions or a direction (including time to prepare the supplies), in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>.",
+            "type": [
+                "Duration"
+            ]
+        },
+        {
+            "name": "supply",
+            "desc": "A sub-property of instrument. A supply consumed when performing instructions or a direction.",
+            "type": [
+                "HowToSupply",
+                "Text"
+            ]
+        },
+        {
+            "name": "afterMedia",
+            "desc": "A media object representing the circumstances after performing this direction.",
+            "type": [
+                "MediaObject"
+            ]
+        },
+        {
+            "name": "duringMedia",
+            "desc": "A media object representing the circumstances while performing this direction.",
+            "type": [
+                "MediaObject"
+            ]
+        }
+    ],
+    "from": {
+        "ListItem": [
+            {
+                "name": "nextItem",
+                "desc": "A link to the ListItem that follows the current one.",
+                "type": [
+                    "ListItem"
+                ]
+            },
+            {
+                "name": "position",
+                "desc": "The position of an item in a series or sequence of items.",
+                "type": [
+                    "Integer",
+                    "Text"
+                ]
+            },
+            {
+                "name": "previousItem",
+                "desc": "A link to the ListItem that preceeds the current one.",
+                "type": [
+                    "ListItem"
+                ]
+            },
+            {
+                "name": "item",
+                "desc": "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')\u2019.",
+                "type": [
+                    "Thing"
+                ]
+            }
+        ]
+    }
 }

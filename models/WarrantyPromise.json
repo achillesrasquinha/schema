@@ -1,3 +1,22 @@
 {
-    "type": "WarrantyPromise"
+    "name": "WarrantyPromise",
+    "prop": [
+        {
+            "name": "durationOfWarranty",
+            "desc": "The duration of the warranty promise. Common unitCode values are ANN for year, MON for months, or DAY for days.",
+            "type": [
+                "QuantitativeValue"
+            ]
+        },
+        {
+            "name": "warrantyScope",
+            "desc": "The scope of the warranty promise.",
+            "type": [
+                "WarrantyScope"
+            ]
+        }
+    ],
+    "from": {
+        "StructuredValue": []
+    }
 }

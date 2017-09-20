@@ -45,7 +45,7 @@ class Cache(object):
             if response.ok:
                 data = response.json()
 
-                with open(typepath, mode = 'r') as f:
+                with open(typepath, mode = 'w') as f:
                     json.dump(data, f)
             else:
                 if response.status_code == 404:

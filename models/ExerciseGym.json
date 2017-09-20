@@ -1,3 +1,7 @@
 {
-    "type": "ExerciseGym"
+    "name": "ExerciseGym",
+    "prop": [],
+    "from": {
+        "SportsActivityLocation": []
+    }
 }

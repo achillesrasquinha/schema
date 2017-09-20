@@ -1,3 +1,7 @@
 {
-    "type": "Physician"
+    "name": "Physician",
+    "prop": [],
+    "from": {
+        "MedicalOrganization": []
+    }
 }

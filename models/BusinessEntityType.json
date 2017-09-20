@@ -1,3 +1,7 @@
 {
-    "type": "BusinessEntityType"
+    "name": "BusinessEntityType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

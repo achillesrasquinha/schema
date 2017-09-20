@@ -1,3 +1,7 @@
 {
-    "type": "NailSalon"
+    "name": "NailSalon",
+    "prop": [],
+    "from": {
+        "HealthAndBeautyBusiness": []
+    }
 }

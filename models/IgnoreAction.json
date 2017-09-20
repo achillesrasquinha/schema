@@ -1,3 +1,7 @@
 {
-    "type": "IgnoreAction"
+    "name": "IgnoreAction",
+    "prop": [],
+    "from": {
+        "AssessAction": []
+    }
 }

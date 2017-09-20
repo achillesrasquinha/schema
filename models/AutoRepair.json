@@ -1,3 +1,7 @@
 {
-    "type": "AutoRepair"
+    "name": "AutoRepair",
+    "prop": [],
+    "from": {
+        "AutomotiveBusiness": []
+    }
 }

@@ -1,3 +1,44 @@
 {
-    "type": "TelevisionChannel"
+    "name": "TelevisionChannel",
+    "prop": [],
+    "from": {
+        "BroadcastChannel": [
+            {
+                "name": "broadcastChannelId",
+                "desc": "The unique address by which the BroadcastService can be identified in a provider lineup. In US, this is typically a number.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "broadcastServiceTier",
+                "desc": "The type of service required to have access to the channel (e.g. Standard or Premium).",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "inBroadcastLineup",
+                "desc": "The CableOrSatelliteService offering the channel.",
+                "type": [
+                    "CableOrSatelliteService"
+                ]
+            },
+            {
+                "name": "providesBroadcastService",
+                "desc": "The BroadcastService offered on this channel.",
+                "type": [
+                    "BroadcastService"
+                ]
+            },
+            {
+                "name": "genre",
+                "desc": "Genre of the creative work, broadcast channel or group.",
+                "type": [
+                    "URL",
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

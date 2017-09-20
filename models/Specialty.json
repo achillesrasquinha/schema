@@ -1,3 +1,7 @@
 {
-    "type": "Specialty"
+    "name": "Specialty",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

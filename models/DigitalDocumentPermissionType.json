@@ -1,3 +1,7 @@
 {
-    "type": "DigitalDocumentPermissionType"
+    "name": "DigitalDocumentPermissionType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

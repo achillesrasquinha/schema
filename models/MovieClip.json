@@ -1,3 +1,73 @@
 {
-    "type": "MovieClip"
+    "name": "MovieClip",
+    "prop": [],
+    "from": {
+        "Clip": [
+            {
+                "name": "actor",
+                "desc": "An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "partOfSeries",
+                "desc": "The series to which this episode or season belongs.",
+                "type": [
+                    "CreativeWorkSeries"
+                ]
+            },
+            {
+                "name": "partOfEpisode",
+                "desc": "The episode to which this clip belongs.",
+                "type": [
+                    "Episode"
+                ]
+            },
+            {
+                "name": "partOfSeason",
+                "desc": "The season to which this episode belongs.",
+                "type": [
+                    "CreativeWorkSeason"
+                ]
+            },
+            {
+                "name": "musicBy",
+                "desc": "The composer of the soundtrack.",
+                "type": [
+                    "MusicGroup",
+                    "Person"
+                ]
+            },
+            {
+                "name": "directors",
+                "desc": "A director of e.g. tv, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "director",
+                "desc": "A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "actors",
+                "desc": "An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "clipNumber",
+                "desc": "Position of the clip within an ordered group of clips.",
+                "type": [
+                    "Text",
+                    "Integer"
+                ]
+            }
+        ]
+    }
 }

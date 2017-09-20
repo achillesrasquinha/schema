@@ -1,3 +1,17 @@
 {
-    "type": "DepositAccount"
+    "name": "DepositAccount",
+    "prop": [],
+    "from": {
+        "InvestmentOrDeposit": [
+            {
+                "name": "amount",
+                "desc": "The amount of money.",
+                "type": [
+                    "MonetaryAmount",
+                    "Number"
+                ]
+            }
+        ],
+        "BankAccount": []
+    }
 }

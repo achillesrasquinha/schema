@@ -1,3 +1,7 @@
 {
-    "type": "Locksmith"
+    "name": "Locksmith",
+    "prop": [],
+    "from": {
+        "HomeAndConstructionBusiness": []
+    }
 }

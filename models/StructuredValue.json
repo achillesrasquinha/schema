@@ -1,3 +1,7 @@
 {
-    "type": "StructuredValue"
+    "name": "StructuredValue",
+    "prop": [],
+    "from": {
+        "Intangible": []
+    }
 }

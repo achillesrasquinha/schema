@@ -1,3 +1,7 @@
 {
-    "type": "Energy"
+    "name": "Energy",
+    "prop": [],
+    "from": {
+        "Quantity": []
+    }
 }

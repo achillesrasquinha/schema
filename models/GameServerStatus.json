@@ -1,3 +1,7 @@
 {
-    "type": "GameServerStatus"
+    "name": "GameServerStatus",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

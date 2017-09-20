@@ -1,3 +1,7 @@
 {
-    "type": "TattooParlor"
+    "name": "TattooParlor",
+    "prop": [],
+    "from": {
+        "HealthAndBeautyBusiness": []
+    }
 }

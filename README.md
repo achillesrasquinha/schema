@@ -19,29 +19,27 @@
 #### JSON Schemas
 ##### Tree
 ```json
-[
-    {
-        "name": "Thing",
-        "desc": "The most generic type of item.",
-        "type": "core",
-        "children":
-        [
-            {
-                "name": "Action",
-                "children":
-                [
-                    
-                ]
-            }
-        ]
-    }
-]
+{
+    "name": "Thing",
+    "desc": "The most generic type of item.",
+    "type": "core",
+    "children":
+    [
+        {
+            "name": "Action",
+            "children":
+            [
+                
+            ]
+        }
+    ]
+}
 ```
 
 ##### Type
 ```json
 {
-    "type": "Hospital",
+    "name": "Hospital",
     "prop":
     [
         {

@@ -1,3 +1,7 @@
 {
-    "type": "MusicAlbumReleaseType"
+    "name": "MusicAlbumReleaseType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

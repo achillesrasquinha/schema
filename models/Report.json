@@ -1,3 +1,60 @@
 {
-    "type": "Report"
+    "name": "Report",
+    "prop": [
+        {
+            "name": "reportNumber",
+            "desc": "The number or other unique designator assigned to a Report by the publishing organization.",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "Article": [
+            {
+                "name": "pagination",
+                "desc": "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "pageEnd",
+                "desc": "The page on which the work ends; for example \"138\" or \"xvi\".",
+                "type": [
+                    "Integer",
+                    "Text"
+                ]
+            },
+            {
+                "name": "articleSection",
+                "desc": "Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "wordCount",
+                "desc": "The number of words in the text of the Article.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "articleBody",
+                "desc": "The actual body of the article.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "pageStart",
+                "desc": "The page on which the work starts; for example \"135\" or \"xiii\".",
+                "type": [
+                    "Text",
+                    "Integer"
+                ]
+            }
+        ]
+    }
 }

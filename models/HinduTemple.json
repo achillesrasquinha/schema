@@ -1,3 +1,7 @@
 {
-    "type": "HinduTemple"
+    "name": "HinduTemple",
+    "prop": [],
+    "from": {
+        "PlaceOfWorship": []
+    }
 }

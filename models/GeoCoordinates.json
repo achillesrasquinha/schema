@@ -1,3 +1,55 @@
 {
-    "type": "GeoCoordinates"
+    "name": "GeoCoordinates",
+    "prop": [
+        {
+            "name": "latitude",
+            "desc": "The latitude of a location. For example <code>37.42242</code> (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>).",
+            "type": [
+                "Number",
+                "Text"
+            ]
+        },
+        {
+            "name": "longitude",
+            "desc": "The longitude of a location. For example <code>-122.08585</code> (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>).",
+            "type": [
+                "Number",
+                "Text"
+            ]
+        },
+        {
+            "name": "address",
+            "desc": "Physical address of the item.",
+            "type": [
+                "PostalAddress",
+                "Text"
+            ]
+        },
+        {
+            "name": "addressCountry",
+            "desc": "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>.",
+            "type": [
+                "Country",
+                "Text"
+            ]
+        },
+        {
+            "name": "postalCode",
+            "desc": "The postal code. For example, 94043.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "elevation",
+            "desc": "The elevation of a location (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>).",
+            "type": [
+                "Text",
+                "Number"
+            ]
+        }
+    ],
+    "from": {
+        "StructuredValue": []
+    }
 }

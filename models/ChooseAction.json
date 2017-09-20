@@ -1,3 +1,24 @@
 {
-    "type": "ChooseAction"
+    "name": "ChooseAction",
+    "prop": [
+        {
+            "name": "actionOption",
+            "desc": "A sub property of object. The options subject to this action.",
+            "type": [
+                "Thing",
+                "Text"
+            ]
+        },
+        {
+            "name": "option",
+            "desc": "A sub property of object. The options subject to this action.",
+            "type": [
+                "Text",
+                "Thing"
+            ]
+        }
+    ],
+    "from": {
+        "AssessAction": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "Florist"
+    "name": "Florist",
+    "prop": [],
+    "from": {
+        "Store": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "PaymentMethod"
+    "name": "PaymentMethod",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

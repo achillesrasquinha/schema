@@ -1,3 +1,191 @@
 {
-    "type": "VideoGameSeries"
+    "name": "VideoGameSeries",
+    "prop": [
+        {
+            "name": "gameItem",
+            "desc": "An item is an object within the game world that can be collected by a player or, occasionally, a non-player character.",
+            "type": [
+                "Thing"
+            ]
+        },
+        {
+            "name": "seasons",
+            "desc": "A season in a media series.",
+            "type": [
+                "CreativeWorkSeason"
+            ]
+        },
+        {
+            "name": "gamePlatform",
+            "desc": "The electronic systems used to play <a href=\"http://en.wikipedia.org/wiki/Category:Video_game_platforms\">video games</a>.",
+            "type": [
+                "Thing",
+                "Text",
+                "URL"
+            ]
+        },
+        {
+            "name": "actor",
+            "desc": "An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "numberOfEpisodes",
+            "desc": "The number of episodes in this season or series.",
+            "type": [
+                "Integer"
+            ]
+        },
+        {
+            "name": "trailer",
+            "desc": "The trailer of a movie or tv/radio series, season, episode, etc.",
+            "type": [
+                "VideoObject"
+            ]
+        },
+        {
+            "name": "season",
+            "desc": "A season in a media series.",
+            "type": [
+                "CreativeWorkSeason"
+            ]
+        },
+        {
+            "name": "episodes",
+            "desc": "An episode of a TV/radio series or season.",
+            "type": [
+                "Episode"
+            ]
+        },
+        {
+            "name": "cheatCode",
+            "desc": "Cheat codes to the game.",
+            "type": [
+                "CreativeWork"
+            ]
+        },
+        {
+            "name": "characterAttribute",
+            "desc": "A piece of data that represents a particular aspect of a fictional character (skill, power, character points, advantage, disadvantage).",
+            "type": [
+                "Thing"
+            ]
+        },
+        {
+            "name": "gameLocation",
+            "desc": "Real or fictional location of the game (or part of game).",
+            "type": [
+                "PostalAddress",
+                "Place",
+                "URL"
+            ]
+        },
+        {
+            "name": "musicBy",
+            "desc": "The composer of the soundtrack.",
+            "type": [
+                "MusicGroup",
+                "Person"
+            ]
+        },
+        {
+            "name": "containsSeason",
+            "desc": "A season that is part of the media series.",
+            "type": [
+                "CreativeWorkSeason"
+            ]
+        },
+        {
+            "name": "directors",
+            "desc": "A director of e.g. tv, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "playMode",
+            "desc": "Indicates whether this game is multi-player, co-op or single-player.  The game can be marked as multi-player, co-op and single-player at the same time.",
+            "type": [
+                "GamePlayMode"
+            ]
+        },
+        {
+            "name": "numberOfSeasons",
+            "desc": "The number of seasons in this series.",
+            "type": [
+                "Integer"
+            ]
+        },
+        {
+            "name": "director",
+            "desc": "A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "productionCompany",
+            "desc": "The production company or studio responsible for the item e.g. series, video game, episode etc.",
+            "type": [
+                "Organization"
+            ]
+        },
+        {
+            "name": "quest",
+            "desc": "The task that a player-controlled character, or group of characters may complete in order to gain a reward.",
+            "type": [
+                "Thing"
+            ]
+        },
+        {
+            "name": "numberOfPlayers",
+            "desc": "Indicate how many people can play this game (minimum, maximum, or range).",
+            "type": [
+                "QuantitativeValue"
+            ]
+        },
+        {
+            "name": "actors",
+            "desc": "An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "episode",
+            "desc": "An episode of a tv, radio or game media within a series or season.",
+            "type": [
+                "Episode"
+            ]
+        }
+    ],
+    "from": {
+        "CreativeWorkSeries": [
+            {
+                "name": "endDate",
+                "desc": "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+                "type": [
+                    "Date",
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "issn",
+                "desc": "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "startDate",
+                "desc": "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+                "type": [
+                    "DateTime",
+                    "Date"
+                ]
+            }
+        ]
+    }
 }

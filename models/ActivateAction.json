@@ -1,3 +1,7 @@
 {
-    "type": "ActivateAction"
+    "name": "ActivateAction",
+    "prop": [],
+    "from": {
+        "ControlAction": []
+    }
 }

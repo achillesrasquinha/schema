@@ -1,3 +1,139 @@
 {
-    "type": "Flight"
+    "name": "Flight",
+    "prop": [
+        {
+            "name": "arrivalAirport",
+            "desc": "The airport where the flight terminates.",
+            "type": [
+                "Airport"
+            ]
+        },
+        {
+            "name": "provider",
+            "desc": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "arrivalGate",
+            "desc": "Identifier of the flight's arrival gate.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "flightNumber",
+            "desc": "The unique identifier for a flight including the airline IATA code. For example, if describing United flight 110, where the IATA code for United is 'UA', the flightNumber is 'UA110'.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "carrier",
+            "desc": "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
+            "type": [
+                "Organization"
+            ]
+        },
+        {
+            "name": "boardingPolicy",
+            "desc": "The type of boarding policy used by the airline (e.g. zone-based or group-based).",
+            "type": [
+                "BoardingPolicyType"
+            ]
+        },
+        {
+            "name": "aircraft",
+            "desc": "The kind of aircraft (e.g., \"Boeing 747\").",
+            "type": [
+                "Vehicle",
+                "Text"
+            ]
+        },
+        {
+            "name": "arrivalTime",
+            "desc": "The expected arrival time.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "seller",
+            "desc": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        },
+        {
+            "name": "webCheckinTime",
+            "desc": "The time when a passenger can check into the flight online.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "mealService",
+            "desc": "Description of the meals that will be provided or available for purchase.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "departureGate",
+            "desc": "Identifier of the flight's departure gate.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "departureTerminal",
+            "desc": "Identifier of the flight's departure terminal.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "estimatedFlightDuration",
+            "desc": "The estimated time the flight will take.",
+            "type": [
+                "Duration",
+                "Text"
+            ]
+        },
+        {
+            "name": "flightDistance",
+            "desc": "The distance of the flight.",
+            "type": [
+                "Distance",
+                "Text"
+            ]
+        },
+        {
+            "name": "arrivalTerminal",
+            "desc": "Identifier of the flight's arrival terminal.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "departureAirport",
+            "desc": "The airport where the flight originates.",
+            "type": [
+                "Airport"
+            ]
+        },
+        {
+            "name": "departureTime",
+            "desc": "The expected departure time.",
+            "type": [
+                "DateTime"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

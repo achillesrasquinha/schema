@@ -1,3 +1,7 @@
 {
-    "type": "MovingCompany"
+    "name": "MovingCompany",
+    "prop": [],
+    "from": {
+        "HomeAndConstructionBusiness": []
+    }
 }

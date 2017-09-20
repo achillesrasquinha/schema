@@ -1,3 +1,7 @@
 {
-    "type": "ComedyClub"
+    "name": "ComedyClub",
+    "prop": [],
+    "from": {
+        "EntertainmentBusiness": []
+    }
 }

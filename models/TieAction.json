@@ -1,3 +1,7 @@
 {
-    "type": "TieAction"
+    "name": "TieAction",
+    "prop": [],
+    "from": {
+        "AchieveAction": []
+    }
 }

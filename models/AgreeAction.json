@@ -1,3 +1,7 @@
 {
-    "type": "AgreeAction"
+    "name": "AgreeAction",
+    "prop": [],
+    "from": {
+        "ReactAction": []
+    }
 }

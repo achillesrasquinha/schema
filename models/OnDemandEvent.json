@@ -1,3 +1,29 @@
 {
-    "type": "OnDemandEvent"
+    "name": "OnDemandEvent",
+    "prop": [],
+    "from": {
+        "PublicationEvent": [
+            {
+                "name": "publishedOn",
+                "desc": "A broadcast service associated with the publication event.",
+                "type": [
+                    "BroadcastService"
+                ]
+            },
+            {
+                "name": "free",
+                "desc": "A flag to signal that the item, event, or place is accessible for free.",
+                "type": [
+                    "Boolean"
+                ]
+            },
+            {
+                "name": "isAccessibleForFree",
+                "desc": "A flag to signal that the item, event, or place is accessible for free.",
+                "type": [
+                    "Boolean"
+                ]
+            }
+        ]
+    }
 }

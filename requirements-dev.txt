@@ -1,5 +1,6 @@
 setuptools
 twine
+beautifulsoup4
 ipython
 Sphinx
 six

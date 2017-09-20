@@ -1,3 +1,7 @@
 {
-    "type": "Duration"
+    "name": "Duration",
+    "prop": [],
+    "from": {
+        "Quantity": []
+    }
 }

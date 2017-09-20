@@ -1,3 +1,7 @@
 {
-    "type": "Attorney"
+    "name": "Attorney",
+    "prop": [],
+    "from": {
+        "LegalService": []
+    }
 }

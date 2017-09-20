@@ -1,3 +1,7 @@
 {
-    "type": "GamePlayMode"
+    "name": "GamePlayMode",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

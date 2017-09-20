@@ -1,3 +1,7 @@
 {
-    "type": "ApplyAction"
+    "name": "ApplyAction",
+    "prop": [],
+    "from": {
+        "OrganizeAction": []
+    }
 }

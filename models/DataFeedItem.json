@@ -1,3 +1,38 @@
 {
-    "type": "DataFeedItem"
+    "name": "DataFeedItem",
+    "prop": [
+        {
+            "name": "dateModified",
+            "desc": "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.",
+            "type": [
+                "DateTime",
+                "Date"
+            ]
+        },
+        {
+            "name": "dateDeleted",
+            "desc": "The datetime the item was removed from the DataFeed.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "dateCreated",
+            "desc": "The date on which the CreativeWork was created or the item was added to a DataFeed.",
+            "type": [
+                "Date",
+                "DateTime"
+            ]
+        },
+        {
+            "name": "item",
+            "desc": "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')\u2019.",
+            "type": [
+                "Thing"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

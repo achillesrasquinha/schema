@@ -1,3 +1,15 @@
 {
-    "type": "DiscussionForumPosting"
+    "name": "DiscussionForumPosting",
+    "prop": [],
+    "from": {
+        "SocialMediaPosting": [
+            {
+                "name": "sharedContent",
+                "desc": "A CreativeWork such as an image, video, or audio clip shared as part of this posting.",
+                "type": [
+                    "CreativeWork"
+                ]
+            }
+        ]
+    }
 }

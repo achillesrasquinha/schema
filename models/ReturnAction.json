@@ -1,3 +1,33 @@
 {
-    "type": "ReturnAction"
+    "name": "ReturnAction",
+    "prop": [
+        {
+            "name": "recipient",
+            "desc": "A sub property of participant. The participant who is at the receiving end of the action.",
+            "type": [
+                "Person",
+                "Organization",
+                "ContactPoint",
+                "Audience"
+            ]
+        }
+    ],
+    "from": {
+        "TransferAction": [
+            {
+                "name": "toLocation",
+                "desc": "A sub property of location. The final location of the object or the agent after the action.",
+                "type": [
+                    "Place"
+                ]
+            },
+            {
+                "name": "fromLocation",
+                "desc": "A sub property of location. The original location of the object or the agent before the action.",
+                "type": [
+                    "Place"
+                ]
+            }
+        ]
+    }
 }

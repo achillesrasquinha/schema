@@ -1,3 +1,7 @@
 {
-    "type": "RegisterAction"
+    "name": "RegisterAction",
+    "prop": [],
+    "from": {
+        "InteractAction": []
+    }
 }

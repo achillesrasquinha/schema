@@ -1,3 +1,72 @@
 {
-    "type": "TrainTrip"
+    "name": "TrainTrip",
+    "prop": [
+        {
+            "name": "departureStation",
+            "desc": "The station from which the train departs.",
+            "type": [
+                "TrainStation"
+            ]
+        },
+        {
+            "name": "provider",
+            "desc": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "arrivalPlatform",
+            "desc": "The platform where the train arrives.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "departurePlatform",
+            "desc": "The platform from which the train departs.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "trainName",
+            "desc": "The name of the train (e.g. The Orient Express).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "trainNumber",
+            "desc": "The unique identifier for the train.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "arrivalStation",
+            "desc": "The station where the train trip ends.",
+            "type": [
+                "TrainStation"
+            ]
+        },
+        {
+            "name": "arrivalTime",
+            "desc": "The expected arrival time.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "departureTime",
+            "desc": "The expected departure time.",
+            "type": [
+                "DateTime"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

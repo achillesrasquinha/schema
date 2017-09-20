@@ -1,3 +1,7 @@
 {
-    "type": "Electrician"
+    "name": "Electrician",
+    "prop": [],
+    "from": {
+        "HomeAndConstructionBusiness": []
+    }
 }

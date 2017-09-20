@@ -1,3 +1,40 @@
 {
-    "type": "Rating"
+    "name": "Rating",
+    "prop": [
+        {
+            "name": "ratingValue",
+            "desc": "The rating for the content.",
+            "type": [
+                "Number",
+                "Text"
+            ]
+        },
+        {
+            "name": "bestRating",
+            "desc": "The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.",
+            "type": [
+                "Text",
+                "Number"
+            ]
+        },
+        {
+            "name": "author",
+            "desc": "The author of this content or rating. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "worstRating",
+            "desc": "The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.",
+            "type": [
+                "Text",
+                "Number"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

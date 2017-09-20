@@ -1,3 +1,7 @@
 {
-    "type": "CheckAction"
+    "name": "CheckAction",
+    "prop": [],
+    "from": {
+        "FindAction": []
+    }
 }

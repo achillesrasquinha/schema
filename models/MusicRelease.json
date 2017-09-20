@@ -1,3 +1,74 @@
 {
-    "type": "MusicRelease"
+    "name": "MusicRelease",
+    "prop": [
+        {
+            "name": "recordLabel",
+            "desc": "The label that issued the release.",
+            "type": [
+                "Organization"
+            ]
+        },
+        {
+            "name": "catalogNumber",
+            "desc": "The catalog number for the release.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "creditedTo",
+            "desc": "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "releaseOf",
+            "desc": "The album this is a release of.",
+            "type": [
+                "MusicAlbum"
+            ]
+        },
+        {
+            "name": "duration",
+            "desc": "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>.",
+            "type": [
+                "Duration"
+            ]
+        },
+        {
+            "name": "musicReleaseFormat",
+            "desc": "Format of this release (the type of recording media used, ie. compact disc, digital media, LP, etc.).",
+            "type": [
+                "MusicReleaseFormatType"
+            ]
+        }
+    ],
+    "from": {
+        "MusicPlaylist": [
+            {
+                "name": "track",
+                "desc": "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
+                "type": [
+                    "ItemList",
+                    "MusicRecording"
+                ]
+            },
+            {
+                "name": "numTracks",
+                "desc": "The number of tracks in this album or playlist.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "tracks",
+                "desc": "A music recording (track)&#x2014;usually a single song.",
+                "type": [
+                    "MusicRecording"
+                ]
+            }
+        ]
+    }
 }

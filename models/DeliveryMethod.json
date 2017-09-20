@@ -1,3 +1,7 @@
 {
-    "type": "DeliveryMethod"
+    "name": "DeliveryMethod",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

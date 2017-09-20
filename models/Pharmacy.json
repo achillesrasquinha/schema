@@ -1,3 +1,7 @@
 {
-    "type": "Pharmacy"
+    "name": "Pharmacy",
+    "prop": [],
+    "from": {
+        "MedicalOrganization": []
+    }
 }

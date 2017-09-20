@@ -1,3 +1,7 @@
 {
-    "type": "UserBlocks"
+    "name": "UserBlocks",
+    "prop": [],
+    "from": {
+        "UserInteraction": []
+    }
 }

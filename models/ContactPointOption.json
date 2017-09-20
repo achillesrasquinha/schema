@@ -1,3 +1,7 @@
 {
-    "type": "ContactPointOption"
+    "name": "ContactPointOption",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

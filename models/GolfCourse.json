@@ -1,3 +1,7 @@
 {
-    "type": "GolfCourse"
+    "name": "GolfCourse",
+    "prop": [],
+    "from": {
+        "SportsActivityLocation": []
+    }
 }

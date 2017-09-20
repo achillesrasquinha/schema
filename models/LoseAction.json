@@ -1,3 +1,15 @@
 {
-    "type": "LoseAction"
+    "name": "LoseAction",
+    "prop": [
+        {
+            "name": "winner",
+            "desc": "A sub property of participant. The winner of the action.",
+            "type": [
+                "Person"
+            ]
+        }
+    ],
+    "from": {
+        "AchieveAction": []
+    }
 }

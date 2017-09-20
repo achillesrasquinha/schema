@@ -1,3 +1,168 @@
 {
-    "type": "Order"
+    "name": "Order",
+    "prop": [
+        {
+            "name": "orderDate",
+            "desc": "Date order was placed.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "paymentDue",
+            "desc": "The date that payment is due.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "orderNumber",
+            "desc": "The identifier of the transaction.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "paymentUrl",
+            "desc": "The URL for sending a payment.",
+            "type": [
+                "URL"
+            ]
+        },
+        {
+            "name": "orderStatus",
+            "desc": "The current status of the order.",
+            "type": [
+                "OrderStatus"
+            ]
+        },
+        {
+            "name": "billingAddress",
+            "desc": "The billing address for the order.",
+            "type": [
+                "PostalAddress"
+            ]
+        },
+        {
+            "name": "partOfInvoice",
+            "desc": "The order is being paid as part of the referenced Invoice.",
+            "type": [
+                "Invoice"
+            ]
+        },
+        {
+            "name": "confirmationNumber",
+            "desc": "A number that confirms the given order or payment has been received.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "customer",
+            "desc": "Party placing the order or paying the invoice.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "merchant",
+            "desc": "'merchant' is an out-dated term for 'seller'.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "broker",
+            "desc": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        },
+        {
+            "name": "isGift",
+            "desc": "Was the offer accepted as a gift for someone other than the buyer.",
+            "type": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "paymentMethod",
+            "desc": "The name of the credit card or other method of payment for the order.",
+            "type": [
+                "PaymentMethod"
+            ]
+        },
+        {
+            "name": "seller",
+            "desc": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        },
+        {
+            "name": "paymentMethodId",
+            "desc": "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "discount",
+            "desc": "Any discount applied (to an Order).",
+            "type": [
+                "Number",
+                "Text"
+            ]
+        },
+        {
+            "name": "orderDelivery",
+            "desc": "The delivery of the parcel related to this order or order item.",
+            "type": [
+                "ParcelDelivery"
+            ]
+        },
+        {
+            "name": "orderedItem",
+            "desc": "The item ordered.",
+            "type": [
+                "OrderItem",
+                "Product"
+            ]
+        },
+        {
+            "name": "acceptedOffer",
+            "desc": "The offer(s) -- e.g., product, quantity and price combinations -- included in the order.",
+            "type": [
+                "Offer"
+            ]
+        },
+        {
+            "name": "discountCurrency",
+            "desc": "The currency (in 3-letter ISO 4217 format) of the discount.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "paymentDueDate",
+            "desc": "The date that payment is due.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "discountCode",
+            "desc": "Code used to redeem a discount.",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

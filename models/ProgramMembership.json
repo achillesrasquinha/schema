@@ -1,3 +1,45 @@
 {
-    "type": "ProgramMembership"
+    "name": "ProgramMembership",
+    "prop": [
+        {
+            "name": "membershipNumber",
+            "desc": "A unique identifier for the membership.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "members",
+            "desc": "A member of this organization.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        },
+        {
+            "name": "member",
+            "desc": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "hostingOrganization",
+            "desc": "The organization (airline, travelers' club, etc.) the membership is made with.",
+            "type": [
+                "Organization"
+            ]
+        },
+        {
+            "name": "programName",
+            "desc": "The program providing the membership.",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

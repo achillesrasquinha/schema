@@ -1,3 +1,7 @@
 {
-    "type": "WPSideBar"
+    "name": "WPSideBar",
+    "prop": [],
+    "from": {
+        "WebPageElement": []
+    }
 }

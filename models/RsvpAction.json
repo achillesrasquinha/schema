@@ -1,3 +1,37 @@
 {
-    "type": "RsvpAction"
+    "name": "RsvpAction",
+    "prop": [
+        {
+            "name": "additionalNumberOfGuests",
+            "desc": "If responding yes, the number of guests who will attend in addition to the invitee.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "comment",
+            "desc": "Comments, typically from users.",
+            "type": [
+                "Comment"
+            ]
+        },
+        {
+            "name": "rsvpResponse",
+            "desc": "The response (yes, no, maybe) to the RSVP.",
+            "type": [
+                "RsvpResponseType"
+            ]
+        }
+    ],
+    "from": {
+        "InformAction": [
+            {
+                "name": "event",
+                "desc": "Upcoming or past event associated with this place, organization, or action.",
+                "type": [
+                    "Event"
+                ]
+            }
+        ]
+    }
 }

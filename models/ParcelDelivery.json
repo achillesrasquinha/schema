@@ -1,3 +1,93 @@
 {
-    "type": "ParcelDelivery"
+    "name": "ParcelDelivery",
+    "prop": [
+        {
+            "name": "provider",
+            "desc": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "trackingUrl",
+            "desc": "Tracking url for the parcel delivery.",
+            "type": [
+                "URL"
+            ]
+        },
+        {
+            "name": "deliveryAddress",
+            "desc": "Destination address.",
+            "type": [
+                "PostalAddress"
+            ]
+        },
+        {
+            "name": "trackingNumber",
+            "desc": "Shipper tracking number.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "hasDeliveryMethod",
+            "desc": "Method used for delivery or shipping.",
+            "type": [
+                "DeliveryMethod"
+            ]
+        },
+        {
+            "name": "deliveryStatus",
+            "desc": "New entry added as the package passes through each leg of its journey (from shipment to final delivery).",
+            "type": [
+                "DeliveryEvent"
+            ]
+        },
+        {
+            "name": "carrier",
+            "desc": "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
+            "type": [
+                "Organization"
+            ]
+        },
+        {
+            "name": "originAddress",
+            "desc": "Shipper's address.",
+            "type": [
+                "PostalAddress"
+            ]
+        },
+        {
+            "name": "itemShipped",
+            "desc": "Item(s) being shipped.",
+            "type": [
+                "Product"
+            ]
+        },
+        {
+            "name": "partOfOrder",
+            "desc": "The overall order the items in this delivery were included in.",
+            "type": [
+                "Order"
+            ]
+        },
+        {
+            "name": "expectedArrivalFrom",
+            "desc": "The earliest date the package may arrive.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "expectedArrivalUntil",
+            "desc": "The latest date the package may arrive.",
+            "type": [
+                "DateTime"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

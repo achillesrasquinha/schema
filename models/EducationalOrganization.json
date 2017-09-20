@@ -1,3 +1,376 @@
 {
-    "type": "EducationalOrganization"
+    "name": "EducationalOrganization",
+    "prop": [
+        {
+            "name": "alumni",
+            "desc": "Alumni of an organization.",
+            "type": [
+                "Person"
+            ]
+        }
+    ],
+    "from": {
+        "Organization": [
+            {
+                "name": "serviceArea",
+                "desc": "The geographic area where the service is provided.",
+                "type": [
+                    "Place",
+                    "GeoShape",
+                    "AdministrativeArea"
+                ]
+            },
+            {
+                "name": "funder",
+                "desc": "A person or organization that supports (sponsors) something through some kind of financial contribution.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "areaServed",
+                "desc": "The geographic area where a service or offered item is provided.",
+                "type": [
+                    "GeoShape",
+                    "Text",
+                    "Place",
+                    "AdministrativeArea"
+                ]
+            },
+            {
+                "name": "memberOf",
+                "desc": "An Organization (or ProgramMembership) to which this Person or Organization belongs.",
+                "type": [
+                    "Organization",
+                    "ProgramMembership"
+                ]
+            },
+            {
+                "name": "events",
+                "desc": "Upcoming or past events associated with this place or organization.",
+                "type": [
+                    "Event"
+                ]
+            },
+            {
+                "name": "subOrganization",
+                "desc": "A relationship between two organizations where the first includes the second, e.g., as a subsidiary. See also: the more specific 'department' property.",
+                "type": [
+                    "Organization"
+                ]
+            },
+            {
+                "name": "hasOfferCatalog",
+                "desc": "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
+                "type": [
+                    "OfferCatalog"
+                ]
+            },
+            {
+                "name": "globalLocationNumber",
+                "desc": "The <a href=\"http://www.gs1.org/gln\">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "reviews",
+                "desc": "Review of the item.",
+                "type": [
+                    "Review"
+                ]
+            },
+            {
+                "name": "members",
+                "desc": "A member of this organization.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "aggregateRating",
+                "desc": "The overall rating, based on a collection of reviews or ratings, of the item.",
+                "type": [
+                    "AggregateRating"
+                ]
+            },
+            {
+                "name": "duns",
+                "desc": "The Dun &amp; Bradstreet DUNS number for identifying an organization or business person.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "taxID",
+                "desc": "The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "award",
+                "desc": "An award won by or for this item.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "makesOffer",
+                "desc": "A pointer to products or services offered by the organization or person.",
+                "type": [
+                    "Offer"
+                ]
+            },
+            {
+                "name": "contactPoints",
+                "desc": "A contact point for a person or organization.",
+                "type": [
+                    "ContactPoint"
+                ]
+            },
+            {
+                "name": "awards",
+                "desc": "Awards won by or for this item.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "seeks",
+                "desc": "A pointer to products or services sought by the organization or person (demand).",
+                "type": [
+                    "Demand"
+                ]
+            },
+            {
+                "name": "member",
+                "desc": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "founders",
+                "desc": "A person who founded this organization.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "alumni",
+                "desc": "Alumni of an organization.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "dissolutionDate",
+                "desc": "The date that this organization was dissolved.",
+                "type": [
+                    "Date"
+                ]
+            },
+            {
+                "name": "address",
+                "desc": "Physical address of the item.",
+                "type": [
+                    "PostalAddress",
+                    "Text"
+                ]
+            },
+            {
+                "name": "logo",
+                "desc": "An associated logo.",
+                "type": [
+                    "URL",
+                    "ImageObject"
+                ]
+            },
+            {
+                "name": "employees",
+                "desc": "People working for this organization.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "telephone",
+                "desc": "The telephone number.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "email",
+                "desc": "Email address.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "department",
+                "desc": "A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, or a bakery with a cafe.",
+                "type": [
+                    "Organization"
+                ]
+            },
+            {
+                "name": "contactPoint",
+                "desc": "A contact point for a person or organization.",
+                "type": [
+                    "ContactPoint"
+                ]
+            },
+            {
+                "name": "parentOrganization",
+                "desc": "The larger organization that this organization is a <a class=\"localLink\" href=\"http://schema.org/subOrganization\">subOrganization</a> of, if any.",
+                "type": [
+                    "Organization"
+                ]
+            },
+            {
+                "name": "legalName",
+                "desc": "The official name of the organization, e.g. the registered company name.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "foundingDate",
+                "desc": "The date that this organization was founded.",
+                "type": [
+                    "Date"
+                ]
+            },
+            {
+                "name": "employee",
+                "desc": "Someone working for this organization.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "numberOfEmployees",
+                "desc": "The number of employees in an organization e.g. business.",
+                "type": [
+                    "QuantitativeValue"
+                ]
+            },
+            {
+                "name": "naics",
+                "desc": "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "hasPOS",
+                "desc": "Points-of-Sales operated by the organization or person.",
+                "type": [
+                    "Place"
+                ]
+            },
+            {
+                "name": "review",
+                "desc": "A review of the item.",
+                "type": [
+                    "Review"
+                ]
+            },
+            {
+                "name": "foundingLocation",
+                "desc": "The place where the Organization was founded.",
+                "type": [
+                    "Place"
+                ]
+            },
+            {
+                "name": "owns",
+                "desc": "Products owned by the organization or person.",
+                "type": [
+                    "Product",
+                    "OwnershipInfo"
+                ]
+            },
+            {
+                "name": "event",
+                "desc": "Upcoming or past event associated with this place, organization, or action.",
+                "type": [
+                    "Event"
+                ]
+            },
+            {
+                "name": "founder",
+                "desc": "A person who founded this organization.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "publishingPrinciples",
+                "desc": "The publishingPrinciples property indicates (typically via <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a>) a document describing the editorial principles of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (or individual e.g. a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>.</p>\n\n<p>While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a>) can be expressed using schema.org terminology.",
+                "type": [
+                    "CreativeWork",
+                    "URL"
+                ]
+            },
+            {
+                "name": "sponsor",
+                "desc": "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "isicV4",
+                "desc": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "location",
+                "desc": "The location of for example where the event is happening, an organization is located, or where an action takes place.",
+                "type": [
+                    "Place",
+                    "PostalAddress",
+                    "Text"
+                ]
+            },
+            {
+                "name": "brand",
+                "desc": "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.",
+                "type": [
+                    "Organization",
+                    "Brand"
+                ]
+            },
+            {
+                "name": "vatID",
+                "desc": "The Value-added Tax ID of the organization or person.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "leiCode",
+                "desc": "An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "faxNumber",
+                "desc": "The fax number.",
+                "type": [
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

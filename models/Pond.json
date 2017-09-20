@@ -1,3 +1,7 @@
 {
-    "type": "Pond"
+    "name": "Pond",
+    "prop": [],
+    "from": {
+        "BodyOfWater": []
+    }
 }

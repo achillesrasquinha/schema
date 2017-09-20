@@ -1,3 +1,32 @@
 {
-    "type": "EmployeeRole"
+    "name": "EmployeeRole",
+    "prop": [
+        {
+            "name": "salaryCurrency",
+            "desc": "The currency (coded using <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a> ) used for the main salary information in this job posting or for this employee.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "baseSalary",
+            "desc": "The base salary of the job or of an employee in an EmployeeRole.",
+            "type": [
+                "PriceSpecification",
+                "MonetaryAmount",
+                "Number"
+            ]
+        }
+    ],
+    "from": {
+        "OrganizationRole": [
+            {
+                "name": "numberedPosition",
+                "desc": "A number associated with a role in an organization, for example, the number on an athlete's jersey.",
+                "type": [
+                    "Number"
+                ]
+            }
+        ]
+    }
 }

@@ -1,3 +1,25 @@
 {
-    "type": "DigitalDocumentPermission"
+    "name": "DigitalDocumentPermission",
+    "prop": [
+        {
+            "name": "grantee",
+            "desc": "The person, organization, contact point, or audience that has been granted this permission.",
+            "type": [
+                "Audience",
+                "ContactPoint",
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "permissionType",
+            "desc": "The type of permission granted the person, organization, or audience.",
+            "type": [
+                "DigitalDocumentPermissionType"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

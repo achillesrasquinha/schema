@@ -1,3 +1,39 @@
 {
-    "type": "DatedMoneySpecification"
+    "name": "DatedMoneySpecification",
+    "prop": [
+        {
+            "name": "endDate",
+            "desc": "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+            "type": [
+                "Date",
+                "DateTime"
+            ]
+        },
+        {
+            "name": "currency",
+            "desc": "The currency in which the monetary amount is expressed (in 3-letter <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a> format).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "amount",
+            "desc": "The amount of money.",
+            "type": [
+                "MonetaryAmount",
+                "Number"
+            ]
+        },
+        {
+            "name": "startDate",
+            "desc": "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+            "type": [
+                "DateTime",
+                "Date"
+            ]
+        }
+    ],
+    "from": {
+        "StructuredValue": []
+    }
 }

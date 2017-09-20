@@ -29,6 +29,8 @@ test:
 	pytest $(SOURCEDIR)
 
 build:
+	rm -rf models/*
+	
 	$(PYTHON) -B -m bot --dest $(MODELSDIR)
 
 all:

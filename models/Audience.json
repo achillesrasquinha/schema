@@ -1,3 +1,22 @@
 {
-    "type": "Audience"
+    "name": "Audience",
+    "prop": [
+        {
+            "name": "audienceType",
+            "desc": "The target group associated with a given audience (e.g. veterans, car owners, musicians, etc.).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "geographicArea",
+            "desc": "The geographic area associated with the audience.",
+            "type": [
+                "AdministrativeArea"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

@@ -1,3 +1,86 @@
 {
-    "type": "PropertyValueSpecification"
+    "name": "PropertyValueSpecification",
+    "prop": [
+        {
+            "name": "defaultValue",
+            "desc": "The default value of the input.  For properties that expect a literal, the default is a literal value, for properties that expect an object, it's an ID reference to one of the current values.",
+            "type": [
+                "Text",
+                "Thing"
+            ]
+        },
+        {
+            "name": "minValue",
+            "desc": "The lower value of some characteristic or property.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "valuePattern",
+            "desc": "Specifies a regular expression for testing literal values according to the HTML spec.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "stepValue",
+            "desc": "The stepValue attribute indicates the granularity that is expected (and required) of the value in a PropertyValueSpecification.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "valueMaxLength",
+            "desc": "Specifies the allowed range for number of characters in a literal value.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "readonlyValue",
+            "desc": "Whether or not a property is mutable.  Default is false. Specifying this for a property that also has a value makes it act similar to a \"hidden\" input in an HTML form.",
+            "type": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "valueMinLength",
+            "desc": "Specifies the minimum allowed range for number of characters in a literal value.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "maxValue",
+            "desc": "The upper value of some characteristic or property.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "valueName",
+            "desc": "Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML's input@name.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "multipleValues",
+            "desc": "Whether multiple values are allowed for the property.  Default is false.",
+            "type": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "valueRequired",
+            "desc": "Whether the property must be filled in to complete the action.  Default is false.",
+            "type": [
+                "Boolean"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

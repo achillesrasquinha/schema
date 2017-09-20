@@ -1,3 +1,30 @@
 {
-    "type": "InteractionCounter"
+    "name": "InteractionCounter",
+    "prop": [
+        {
+            "name": "interactionService",
+            "desc": "The WebSite or SoftwareApplication where the interactions took place.",
+            "type": [
+                "WebSite",
+                "SoftwareApplication"
+            ]
+        },
+        {
+            "name": "userInteractionCount",
+            "desc": "The number of interactions for the CreativeWork using the WebSite or SoftwareApplication.",
+            "type": [
+                "Integer"
+            ]
+        },
+        {
+            "name": "interactionType",
+            "desc": "The Action representing the type of interaction. For up votes, +1s, etc. use <a class=\"localLink\" href=\"http://schema.org/LikeAction\">LikeAction</a>. For down votes use <a class=\"localLink\" href=\"http://schema.org/DislikeAction\">DislikeAction</a>. Otherwise, use the most specific Action.",
+            "type": [
+                "Action"
+            ]
+        }
+    ],
+    "from": {
+        "StructuredValue": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "ItemAvailability"
+    "name": "ItemAvailability",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

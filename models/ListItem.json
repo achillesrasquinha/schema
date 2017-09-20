@@ -1,3 +1,37 @@
 {
-    "type": "ListItem"
+    "name": "ListItem",
+    "prop": [
+        {
+            "name": "nextItem",
+            "desc": "A link to the ListItem that follows the current one.",
+            "type": [
+                "ListItem"
+            ]
+        },
+        {
+            "name": "position",
+            "desc": "The position of an item in a series or sequence of items.",
+            "type": [
+                "Integer",
+                "Text"
+            ]
+        },
+        {
+            "name": "previousItem",
+            "desc": "A link to the ListItem that preceeds the current one.",
+            "type": [
+                "ListItem"
+            ]
+        },
+        {
+            "name": "item",
+            "desc": "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')\u2019.",
+            "type": [
+                "Thing"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

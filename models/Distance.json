@@ -1,3 +1,7 @@
 {
-    "type": "Distance"
+    "name": "Distance",
+    "prop": [],
+    "from": {
+        "Quantity": []
+    }
 }

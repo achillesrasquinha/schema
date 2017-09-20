@@ -1,3 +1,37 @@
 {
-    "type": "Barcode"
+    "name": "Barcode",
+    "prop": [],
+    "from": {
+        "ImageObject": [
+            {
+                "name": "exifData",
+                "desc": "exif data for this object.",
+                "type": [
+                    "Text",
+                    "PropertyValue"
+                ]
+            },
+            {
+                "name": "representativeOfPage",
+                "desc": "Indicates whether this image is representative of the content of the page.",
+                "type": [
+                    "Boolean"
+                ]
+            },
+            {
+                "name": "thumbnail",
+                "desc": "Thumbnail image for an image or video.",
+                "type": [
+                    "ImageObject"
+                ]
+            },
+            {
+                "name": "caption",
+                "desc": "The caption for this object.",
+                "type": [
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

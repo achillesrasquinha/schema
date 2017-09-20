@@ -1,3 +1,7 @@
 {
-    "type": "TireShop"
+    "name": "TireShop",
+    "prop": [],
+    "from": {
+        "Store": []
+    }
 }

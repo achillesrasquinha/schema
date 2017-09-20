@@ -1,3 +1,7 @@
 {
-    "type": "VideoGallery"
+    "name": "VideoGallery",
+    "prop": [],
+    "from": {
+        "CollectionPage": []
+    }
 }

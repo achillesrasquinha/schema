@@ -1,3 +1,7 @@
 {
-    "type": "AssignAction"
+    "name": "AssignAction",
+    "prop": [],
+    "from": {
+        "AllocateAction": []
+    }
 }

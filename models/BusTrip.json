@@ -1,3 +1,60 @@
 {
-    "type": "BusTrip"
+    "name": "BusTrip",
+    "prop": [
+        {
+            "name": "provider",
+            "desc": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "busName",
+            "desc": "The name of the bus (e.g. Bolt Express).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "departureBusStop",
+            "desc": "The stop or station from which the bus departs.",
+            "type": [
+                "BusStation",
+                "BusStop"
+            ]
+        },
+        {
+            "name": "arrivalBusStop",
+            "desc": "The stop or station from which the bus arrives.",
+            "type": [
+                "BusStation",
+                "BusStop"
+            ]
+        },
+        {
+            "name": "arrivalTime",
+            "desc": "The expected arrival time.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "busNumber",
+            "desc": "The unique identifier for the bus.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "departureTime",
+            "desc": "The expected departure time.",
+            "type": [
+                "DateTime"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

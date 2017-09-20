@@ -1,3 +1,7 @@
 {
-    "type": "DrawAction"
+    "name": "DrawAction",
+    "prop": [],
+    "from": {
+        "CreateAction": []
+    }
 }

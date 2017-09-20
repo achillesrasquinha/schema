@@ -1,3 +1,7 @@
 {
-    "type": "SubscribeAction"
+    "name": "SubscribeAction",
+    "prop": [],
+    "from": {
+        "InteractAction": []
+    }
 }

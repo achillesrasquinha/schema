@@ -1,3 +1,7 @@
 {
-    "type": "WPHeader"
+    "name": "WPHeader",
+    "prop": [],
+    "from": {
+        "WebPageElement": []
+    }
 }

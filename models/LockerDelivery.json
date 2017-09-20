@@ -1,3 +1,7 @@
 {
-    "type": "LockerDelivery"
+    "name": "LockerDelivery",
+    "prop": [],
+    "from": {
+        "DeliveryMethod": []
+    }
 }

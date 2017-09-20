@@ -1,3 +1,7 @@
 {
-    "type": "ActionStatusType"
+    "name": "ActionStatusType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

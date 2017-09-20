@@ -1,3 +1,58 @@
 {
-    "type": "APIReference"
+    "name": "APIReference",
+    "prop": [
+        {
+            "name": "executableLibraryName",
+            "desc": "Library file name e.g., mscorlib.dll, system.web.dll.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "assemblyVersion",
+            "desc": "Associated product/technology version. e.g., .NET Framework 4.5.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "programmingModel",
+            "desc": "Indicates whether API is managed or unmanaged.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "assembly",
+            "desc": "Library file name e.g., mscorlib.dll, system.web.dll.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "targetPlatform",
+            "desc": "Type of app development: phone, Metro style, desktop, XBox, etc.",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "TechArticle": [
+            {
+                "name": "dependencies",
+                "desc": "Prerequisites needed to fulfill steps in article.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "proficiencyLevel",
+                "desc": "Proficiency needed for this content; expected values: 'Beginner', 'Expert'.",
+                "type": [
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

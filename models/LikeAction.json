@@ -1,3 +1,7 @@
 {
-    "type": "LikeAction"
+    "name": "LikeAction",
+    "prop": [],
+    "from": {
+        "ReactAction": []
+    }
 }

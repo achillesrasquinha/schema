@@ -1,3 +1,7 @@
 {
-    "type": "MobilePhoneStore"
+    "name": "MobilePhoneStore",
+    "prop": [],
+    "from": {
+        "Store": []
+    }
 }

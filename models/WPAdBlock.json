@@ -1,3 +1,7 @@
 {
-    "type": "WPAdBlock"
+    "name": "WPAdBlock",
+    "prop": [],
+    "from": {
+        "WebPageElement": []
+    }
 }

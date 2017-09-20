@@ -1,3 +1,7 @@
 {
-    "type": "MotorcycleDealer"
+    "name": "MotorcycleDealer",
+    "prop": [],
+    "from": {
+        "AutomotiveBusiness": []
+    }
 }

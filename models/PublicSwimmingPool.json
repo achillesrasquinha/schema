@@ -1,3 +1,7 @@
 {
-    "type": "PublicSwimmingPool"
+    "name": "PublicSwimmingPool",
+    "prop": [],
+    "from": {
+        "SportsActivityLocation": []
+    }
 }

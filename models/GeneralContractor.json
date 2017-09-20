@@ -1,3 +1,7 @@
 {
-    "type": "GeneralContractor"
+    "name": "GeneralContractor",
+    "prop": [],
+    "from": {
+        "HomeAndConstructionBusiness": []
+    }
 }

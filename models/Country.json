@@ -1,3 +1,7 @@
 {
-    "type": "Country"
+    "name": "Country",
+    "prop": [],
+    "from": {
+        "AdministrativeArea": []
+    }
 }

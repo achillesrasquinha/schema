@@ -1,3 +1,7 @@
 {
-    "type": "UserPlusOnes"
+    "name": "UserPlusOnes",
+    "prop": [],
+    "from": {
+        "UserInteraction": []
+    }
 }

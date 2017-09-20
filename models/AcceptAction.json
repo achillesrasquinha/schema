@@ -1,3 +1,7 @@
 {
-    "type": "AcceptAction"
+    "name": "AcceptAction",
+    "prop": [],
+    "from": {
+        "AllocateAction": []
+    }
 }

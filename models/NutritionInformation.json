@@ -1,3 +1,92 @@
 {
-    "type": "NutritionInformation"
+    "name": "NutritionInformation",
+    "prop": [
+        {
+            "name": "saturatedFatContent",
+            "desc": "The number of grams of saturated fat.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "fatContent",
+            "desc": "The number of grams of fat.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "unsaturatedFatContent",
+            "desc": "The number of grams of unsaturated fat.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "sugarContent",
+            "desc": "The number of grams of sugar.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "cholesterolContent",
+            "desc": "The number of milligrams of cholesterol.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "carbohydrateContent",
+            "desc": "The number of grams of carbohydrates.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "proteinContent",
+            "desc": "The number of grams of protein.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "sodiumContent",
+            "desc": "The number of milligrams of sodium.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "transFatContent",
+            "desc": "The number of grams of trans fat.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "fiberContent",
+            "desc": "The number of grams of fiber.",
+            "type": [
+                "Mass"
+            ]
+        },
+        {
+            "name": "calories",
+            "desc": "The number of calories.",
+            "type": [
+                "Energy"
+            ]
+        },
+        {
+            "name": "servingSize",
+            "desc": "The serving size, in terms of the number of volume or mass.",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "StructuredValue": []
+    }
 }

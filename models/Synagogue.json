@@ -1,3 +1,7 @@
 {
-    "type": "Synagogue"
+    "name": "Synagogue",
+    "prop": [],
+    "from": {
+        "PlaceOfWorship": []
+    }
 }

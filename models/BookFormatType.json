@@ -1,3 +1,7 @@
 {
-    "type": "BookFormatType"
+    "name": "BookFormatType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

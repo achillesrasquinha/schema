@@ -1,3 +1,7 @@
 {
-    "type": "OfficeEquipmentStore"
+    "name": "OfficeEquipmentStore",
+    "prop": [],
+    "from": {
+        "Store": []
+    }
 }

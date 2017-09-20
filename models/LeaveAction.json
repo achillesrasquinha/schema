@@ -1,3 +1,15 @@
 {
-    "type": "LeaveAction"
+    "name": "LeaveAction",
+    "prop": [
+        {
+            "name": "event",
+            "desc": "Upcoming or past event associated with this place, organization, or action.",
+            "type": [
+                "Event"
+            ]
+        }
+    ],
+    "from": {
+        "InteractAction": []
+    }
 }

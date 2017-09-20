@@ -1,3 +1,43 @@
 {
-    "type": "OpeningHoursSpecification"
+    "name": "OpeningHoursSpecification",
+    "prop": [
+        {
+            "name": "validFrom",
+            "desc": "The date when the item becomes valid.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "validThrough",
+            "desc": "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "opens",
+            "desc": "The opening hour of the place or service on the given day(s) of the week.",
+            "type": [
+                "Time"
+            ]
+        },
+        {
+            "name": "closes",
+            "desc": "The closing hour of the place or service on the given day(s) of the week.",
+            "type": [
+                "Time"
+            ]
+        },
+        {
+            "name": "dayOfWeek",
+            "desc": "The day of the week for which these opening hours are valid.",
+            "type": [
+                "DayOfWeek"
+            ]
+        }
+    ],
+    "from": {
+        "StructuredValue": []
+    }
 }

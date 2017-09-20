@@ -1,3 +1,30 @@
 {
-    "type": "Brand"
+    "name": "Brand",
+    "prop": [
+        {
+            "name": "aggregateRating",
+            "desc": "The overall rating, based on a collection of reviews or ratings, of the item.",
+            "type": [
+                "AggregateRating"
+            ]
+        },
+        {
+            "name": "logo",
+            "desc": "An associated logo.",
+            "type": [
+                "URL",
+                "ImageObject"
+            ]
+        },
+        {
+            "name": "review",
+            "desc": "A review of the item.",
+            "type": [
+                "Review"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

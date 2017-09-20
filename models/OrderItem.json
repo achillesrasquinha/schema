@@ -1,3 +1,44 @@
 {
-    "type": "OrderItem"
+    "name": "OrderItem",
+    "prop": [
+        {
+            "name": "orderItemStatus",
+            "desc": "The current status of the order item.",
+            "type": [
+                "OrderStatus"
+            ]
+        },
+        {
+            "name": "orderQuantity",
+            "desc": "The number of the item ordered. If the property is not set, assume the quantity is one.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "orderDelivery",
+            "desc": "The delivery of the parcel related to this order or order item.",
+            "type": [
+                "ParcelDelivery"
+            ]
+        },
+        {
+            "name": "orderedItem",
+            "desc": "The item ordered.",
+            "type": [
+                "OrderItem",
+                "Product"
+            ]
+        },
+        {
+            "name": "orderItemNumber",
+            "desc": "The identifier of the order item.",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

@@ -1,3 +1,48 @@
 {
-    "type": "OrganizationRole"
+    "name": "OrganizationRole",
+    "prop": [
+        {
+            "name": "numberedPosition",
+            "desc": "A number associated with a role in an organization, for example, the number on an athlete's jersey.",
+            "type": [
+                "Number"
+            ]
+        }
+    ],
+    "from": {
+        "Role": [
+            {
+                "name": "endDate",
+                "desc": "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+                "type": [
+                    "Date",
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "namedPosition",
+                "desc": "A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'.",
+                "type": [
+                    "URL",
+                    "Text"
+                ]
+            },
+            {
+                "name": "startDate",
+                "desc": "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+                "type": [
+                    "DateTime",
+                    "Date"
+                ]
+            },
+            {
+                "name": "roleName",
+                "desc": "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'.",
+                "type": [
+                    "Text",
+                    "URL"
+                ]
+            }
+        ]
+    }
 }

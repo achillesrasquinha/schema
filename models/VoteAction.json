@@ -1,3 +1,32 @@
 {
-    "type": "VoteAction"
+    "name": "VoteAction",
+    "prop": [
+        {
+            "name": "candidate",
+            "desc": "A sub property of object. The candidate subject of this action.",
+            "type": [
+                "Person"
+            ]
+        }
+    ],
+    "from": {
+        "ChooseAction": [
+            {
+                "name": "actionOption",
+                "desc": "A sub property of object. The options subject to this action.",
+                "type": [
+                    "Thing",
+                    "Text"
+                ]
+            },
+            {
+                "name": "option",
+                "desc": "A sub property of object. The options subject to this action.",
+                "type": [
+                    "Text",
+                    "Thing"
+                ]
+            }
+        ]
+    }
 }

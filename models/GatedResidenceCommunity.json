@@ -1,3 +1,7 @@
 {
-    "type": "GatedResidenceCommunity"
+    "name": "GatedResidenceCommunity",
+    "prop": [],
+    "from": {
+        "Residence": []
+    }
 }

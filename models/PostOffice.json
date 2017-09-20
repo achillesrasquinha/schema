@@ -1,3 +1,7 @@
 {
-    "type": "PostOffice"
+    "name": "PostOffice",
+    "prop": [],
+    "from": {
+        "GovernmentOffice": []
+    }
 }

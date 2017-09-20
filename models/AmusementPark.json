@@ -1,3 +1,7 @@
 {
-    "type": "AmusementPark"
+    "name": "AmusementPark",
+    "prop": [],
+    "from": {
+        "EntertainmentBusiness": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "WearAction"
+    "name": "WearAction",
+    "prop": [],
+    "from": {
+        "UseAction": []
+    }
 }

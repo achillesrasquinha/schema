@@ -1,3 +1,7 @@
 {
-    "type": "Enumeration"
+    "name": "Enumeration",
+    "prop": [],
+    "from": {
+        "Intangible": []
+    }
 }

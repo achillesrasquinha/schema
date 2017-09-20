@@ -1,3 +1,7 @@
 {
-    "type": "BoardingPolicyType"
+    "name": "BoardingPolicyType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "BefriendAction"
+    "name": "BefriendAction",
+    "prop": [],
+    "from": {
+        "InteractAction": []
+    }
 }

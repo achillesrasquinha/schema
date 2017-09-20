@@ -1,3 +1,7 @@
 {
-    "type": "DeactivateAction"
+    "name": "DeactivateAction",
+    "prop": [],
+    "from": {
+        "ControlAction": []
+    }
 }

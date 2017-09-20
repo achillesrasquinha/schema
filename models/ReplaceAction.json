@@ -1,3 +1,37 @@
 {
-    "type": "ReplaceAction"
+    "name": "ReplaceAction",
+    "prop": [
+        {
+            "name": "replacee",
+            "desc": "A sub property of object. The object that is being replaced.",
+            "type": [
+                "Thing"
+            ]
+        },
+        {
+            "name": "replacer",
+            "desc": "A sub property of object. The object that replaces.",
+            "type": [
+                "Thing"
+            ]
+        }
+    ],
+    "from": {
+        "UpdateAction": [
+            {
+                "name": "collection",
+                "desc": "A sub property of object. The collection target of the action.",
+                "type": [
+                    "Thing"
+                ]
+            },
+            {
+                "name": "targetCollection",
+                "desc": "A sub property of object. The collection target of the action.",
+                "type": [
+                    "Thing"
+                ]
+            }
+        ]
+    }
 }

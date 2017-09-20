@@ -1,3 +1,49 @@
 {
-    "type": "BarOrPub"
+    "name": "BarOrPub",
+    "prop": [],
+    "from": {
+        "FoodEstablishment": [
+            {
+                "name": "servesCuisine",
+                "desc": "The cuisine of the restaurant.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "hasMenu",
+                "desc": "Either the actual menu as a structured representation, as text, or a URL of the menu.",
+                "type": [
+                    "Text",
+                    "URL",
+                    "Menu"
+                ]
+            },
+            {
+                "name": "menu",
+                "desc": "Either the actual menu as a structured representation, as text, or a URL of the menu.",
+                "type": [
+                    "Text",
+                    "URL",
+                    "Menu"
+                ]
+            },
+            {
+                "name": "starRating",
+                "desc": "An official rating for a lodging business or food establishment, e.g. from national associations or standards bodies. Use the author property to indicate the rating organization, e.g. as an Organization with name such as (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).",
+                "type": [
+                    "Rating"
+                ]
+            },
+            {
+                "name": "acceptsReservations",
+                "desc": "Indicates whether a FoodEstablishment accepts reservations. Values can be Boolean, an URL at which reservations can be made or (for backwards compatibility) the strings <code>Yes</code> or <code>No</code>.",
+                "type": [
+                    "URL",
+                    "Boolean",
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

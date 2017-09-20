@@ -1,3 +1,88 @@
 {
-    "type": "LocationFeatureSpecification"
+    "name": "LocationFeatureSpecification",
+    "prop": [
+        {
+            "name": "hoursAvailable",
+            "desc": "The hours during which this service or contact is available.",
+            "type": [
+                "OpeningHoursSpecification"
+            ]
+        },
+        {
+            "name": "validFrom",
+            "desc": "The date when the item becomes valid.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "validThrough",
+            "desc": "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
+            "type": [
+                "DateTime"
+            ]
+        }
+    ],
+    "from": {
+        "PropertyValue": [
+            {
+                "name": "unitCode",
+                "desc": "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
+                "type": [
+                    "URL",
+                    "Text"
+                ]
+            },
+            {
+                "name": "minValue",
+                "desc": "The lower value of some characteristic or property.",
+                "type": [
+                    "Number"
+                ]
+            },
+            {
+                "name": "propertyID",
+                "desc": "A commonly used identifier for the characteristic represented by the property, e.g. a manufacturer or a standard code for a property. propertyID can be\n(1) a prefixed string, mainly meant to be used with standards for product properties; (2) a site-specific, non-prefixed string (e.g. the primary key of the property or the vendor-specific id of the property), or (3)\na URL indicating the type of the property, either pointing to an external vocabulary, or a Web resource that describes the property (e.g. a glossary entry).\nStandards bodies should promote a standard prefix for the identifiers of properties from their standards.",
+                "type": [
+                    "URL",
+                    "Text"
+                ]
+            },
+            {
+                "name": "value",
+                "desc": "<p>The value of the quantitative value or property value node.</p>\n\n<ul>\n<li>For <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> and <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a>, the recommended type for values is 'Number'.</li>\n<li>For <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li>\n</ul>\n",
+                "type": [
+                    "StructuredValue",
+                    "Number",
+                    "Boolean",
+                    "Text"
+                ]
+            },
+            {
+                "name": "valueReference",
+                "desc": "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.",
+                "type": [
+                    "Enumeration",
+                    "PropertyValue",
+                    "StructuredValue",
+                    "QuantitativeValue",
+                    "QualitativeValue"
+                ]
+            },
+            {
+                "name": "maxValue",
+                "desc": "The upper value of some characteristic or property.",
+                "type": [
+                    "Number"
+                ]
+            },
+            {
+                "name": "unitText",
+                "desc": "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
+                "type": [
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

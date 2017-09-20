@@ -1,3 +1,7 @@
 {
-    "type": "UserTweets"
+    "name": "UserTweets",
+    "prop": [],
+    "from": {
+        "UserInteraction": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "GasStation"
+    "name": "GasStation",
+    "prop": [],
+    "from": {
+        "AutomotiveBusiness": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "Plumber"
+    "name": "Plumber",
+    "prop": [],
+    "from": {
+        "HomeAndConstructionBusiness": []
+    }
 }

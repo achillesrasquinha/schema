@@ -1,3 +1,7 @@
 {
-    "type": "Mass"
+    "name": "Mass",
+    "prop": [],
+    "from": {
+        "Quantity": []
+    }
 }

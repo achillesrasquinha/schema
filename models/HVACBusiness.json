@@ -1,3 +1,7 @@
 {
-    "type": "HVACBusiness"
+    "name": "HVACBusiness",
+    "prop": [],
+    "from": {
+        "HomeAndConstructionBusiness": []
+    }
 }

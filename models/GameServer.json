@@ -1,3 +1,29 @@
 {
-    "type": "GameServer"
+    "name": "GameServer",
+    "prop": [
+        {
+            "name": "game",
+            "desc": "Video game which is played on this server.",
+            "type": [
+                "VideoGame"
+            ]
+        },
+        {
+            "name": "playersOnline",
+            "desc": "Number of players on the server.",
+            "type": [
+                "Integer"
+            ]
+        },
+        {
+            "name": "serverStatus",
+            "desc": "Status of a game server.",
+            "type": [
+                "GameServerStatus"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

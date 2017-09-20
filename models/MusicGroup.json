@@ -1,3 +1,52 @@
 {
-    "type": "MusicGroup"
+    "name": "MusicGroup",
+    "prop": [
+        {
+            "name": "albums",
+            "desc": "A collection of music albums.",
+            "type": [
+                "MusicAlbum"
+            ]
+        },
+        {
+            "name": "track",
+            "desc": "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
+            "type": [
+                "ItemList",
+                "MusicRecording"
+            ]
+        },
+        {
+            "name": "genre",
+            "desc": "Genre of the creative work, broadcast channel or group.",
+            "type": [
+                "URL",
+                "Text"
+            ]
+        },
+        {
+            "name": "tracks",
+            "desc": "A music recording (track)&#x2014;usually a single song.",
+            "type": [
+                "MusicRecording"
+            ]
+        },
+        {
+            "name": "musicGroupMember",
+            "desc": "A member of a music group&#x2014;for example, John, Paul, George, or Ringo.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "album",
+            "desc": "A music album.",
+            "type": [
+                "MusicAlbum"
+            ]
+        }
+    ],
+    "from": {
+        "PerformingGroup": []
+    }
 }

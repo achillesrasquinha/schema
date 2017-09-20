@@ -1,3 +1,7 @@
 {
-    "type": "RoofingContractor"
+    "name": "RoofingContractor",
+    "prop": [],
+    "from": {
+        "HomeAndConstructionBusiness": []
+    }
 }

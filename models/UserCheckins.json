@@ -1,3 +1,7 @@
 {
-    "type": "UserCheckins"
+    "name": "UserCheckins",
+    "prop": [],
+    "from": {
+        "UserInteraction": []
+    }
 }

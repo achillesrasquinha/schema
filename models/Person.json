@@ -1,3 +1,496 @@
 {
-    "type": "Person"
+    "name": "Person",
+    "prop": [
+        {
+            "name": "spouse",
+            "desc": "The person's spouse.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "funder",
+            "desc": "A person or organization that supports (sponsors) something through some kind of financial contribution.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        },
+        {
+            "name": "colleagues",
+            "desc": "A colleague of the person.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "deathDate",
+            "desc": "Date of death.",
+            "type": [
+                "Date"
+            ]
+        },
+        {
+            "name": "memberOf",
+            "desc": "An Organization (or ProgramMembership) to which this Person or Organization belongs.",
+            "type": [
+                "Organization",
+                "ProgramMembership"
+            ]
+        },
+        {
+            "name": "height",
+            "desc": "The height of the item.",
+            "type": [
+                "Distance",
+                "QuantitativeValue"
+            ]
+        },
+        {
+            "name": "workLocation",
+            "desc": "A contact location for a person's place of work.",
+            "type": [
+                "Place",
+                "ContactPoint"
+            ]
+        },
+        {
+            "name": "netWorth",
+            "desc": "The total financial value of the person as calculated by subtracting assets from liabilities.",
+            "type": [
+                "MonetaryAmount",
+                "PriceSpecification"
+            ]
+        },
+        {
+            "name": "children",
+            "desc": "A child of the person.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "jobTitle",
+            "desc": "The job title of the person (for example, Financial Manager).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "hasOfferCatalog",
+            "desc": "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
+            "type": [
+                "OfferCatalog"
+            ]
+        },
+        {
+            "name": "deathPlace",
+            "desc": "The place where the person died.",
+            "type": [
+                "Place"
+            ]
+        },
+        {
+            "name": "globalLocationNumber",
+            "desc": "The <a href=\"http://www.gs1.org/gln\">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "birthPlace",
+            "desc": "The place where the person was born.",
+            "type": [
+                "Place"
+            ]
+        },
+        {
+            "name": "gender",
+            "desc": "Gender of the person. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender.",
+            "type": [
+                "Text",
+                "GenderType"
+            ]
+        },
+        {
+            "name": "alumniOf",
+            "desc": "An organization that the person is an alumni of.",
+            "type": [
+                "EducationalOrganization",
+                "Organization"
+            ]
+        },
+        {
+            "name": "homeLocation",
+            "desc": "A contact location for a person's residence.",
+            "type": [
+                "ContactPoint",
+                "Place"
+            ]
+        },
+        {
+            "name": "duns",
+            "desc": "The Dun &amp; Bradstreet DUNS number for identifying an organization or business person.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "taxID",
+            "desc": "The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "award",
+            "desc": "An award won by or for this item.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "birthDate",
+            "desc": "Date of birth.",
+            "type": [
+                "Date"
+            ]
+        },
+        {
+            "name": "makesOffer",
+            "desc": "A pointer to products or services offered by the organization or person.",
+            "type": [
+                "Offer"
+            ]
+        },
+        {
+            "name": "givenName",
+            "desc": "Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "contactPoints",
+            "desc": "A contact point for a person or organization.",
+            "type": [
+                "ContactPoint"
+            ]
+        },
+        {
+            "name": "awards",
+            "desc": "Awards won by or for this item.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "familyName",
+            "desc": "Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "seeks",
+            "desc": "A pointer to products or services sought by the organization or person (demand).",
+            "type": [
+                "Demand"
+            ]
+        },
+        {
+            "name": "sibling",
+            "desc": "A sibling of the person.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "address",
+            "desc": "Physical address of the item.",
+            "type": [
+                "PostalAddress",
+                "Text"
+            ]
+        },
+        {
+            "name": "performerIn",
+            "desc": "Event that this person is a performer or participant in.",
+            "type": [
+                "Event"
+            ]
+        },
+        {
+            "name": "honorificPrefix",
+            "desc": "An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "additionalName",
+            "desc": "An additional name for a Person, can be used for a middle name.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "siblings",
+            "desc": "A sibling of the person.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "telephone",
+            "desc": "The telephone number.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "email",
+            "desc": "Email address.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "weight",
+            "desc": "The weight of the product or person.",
+            "type": [
+                "QuantitativeValue"
+            ]
+        },
+        {
+            "name": "contactPoint",
+            "desc": "A contact point for a person or organization.",
+            "type": [
+                "ContactPoint"
+            ]
+        },
+        {
+            "name": "colleague",
+            "desc": "A colleague of the person.",
+            "type": [
+                "URL",
+                "Person"
+            ]
+        },
+        {
+            "name": "parents",
+            "desc": "A parents of the person.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "naics",
+            "desc": "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "hasPOS",
+            "desc": "Points-of-Sales operated by the organization or person.",
+            "type": [
+                "Place"
+            ]
+        },
+        {
+            "name": "parent",
+            "desc": "A parent of this person.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "owns",
+            "desc": "Products owned by the organization or person.",
+            "type": [
+                "Product",
+                "OwnershipInfo"
+            ]
+        },
+        {
+            "name": "affiliation",
+            "desc": "An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
+            "type": [
+                "Organization"
+            ]
+        },
+        {
+            "name": "publishingPrinciples",
+            "desc": "The publishingPrinciples property indicates (typically via <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a>) a document describing the editorial principles of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (or individual e.g. a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>.</p>\n\n<p>While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a>) can be expressed using schema.org terminology.",
+            "type": [
+                "CreativeWork",
+                "URL"
+            ]
+        },
+        {
+            "name": "sponsor",
+            "desc": "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        },
+        {
+            "name": "isicV4",
+            "desc": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "brand",
+            "desc": "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.",
+            "type": [
+                "Organization",
+                "Brand"
+            ]
+        },
+        {
+            "name": "honorificSuffix",
+            "desc": "An honorific suffix preceding a Person's name such as M.D. /PhD/MSCSW.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "vatID",
+            "desc": "The Value-added Tax ID of the organization or person.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "nationality",
+            "desc": "Nationality of the person.",
+            "type": [
+                "Country"
+            ]
+        },
+        {
+            "name": "faxNumber",
+            "desc": "The fax number.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "relatedTo",
+            "desc": "The most generic familial relation.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "follows",
+            "desc": "The most generic uni-directional social relation.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "knows",
+            "desc": "The most generic bi-directional social/work relation.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "worksFor",
+            "desc": "Organizations that the person works for.",
+            "type": [
+                "Organization"
+            ]
+        }
+    ],
+    "from": {
+        "Thing": [
+            {
+                "name": "sameAs",
+                "desc": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+                "type": [
+                    "URL"
+                ]
+            },
+            {
+                "name": "url",
+                "desc": "URL of the item.",
+                "type": [
+                    "URL"
+                ]
+            },
+            {
+                "name": "image",
+                "desc": "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.",
+                "type": [
+                    "ImageObject",
+                    "URL"
+                ]
+            },
+            {
+                "name": "additionalType",
+                "desc": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
+                "type": [
+                    "URL"
+                ]
+            },
+            {
+                "name": "name",
+                "desc": "The name of the item.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "identifier",
+                "desc": "The identifier property represents any kind of identifier for any kind of <a class=\"localLink\" href=\"http://schema.org/Thing\">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href=\"/docs/datamodel.html#identifierBg\">background notes</a> for more details.",
+                "type": [
+                    "PropertyValue",
+                    "Text",
+                    "URL"
+                ]
+            },
+            {
+                "name": "potentialAction",
+                "desc": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.",
+                "type": [
+                    "Action"
+                ]
+            },
+            {
+                "name": "mainEntityOfPage",
+                "desc": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See <a href=\"/docs/datamodel.html#mainEntityBackground\">background notes</a> for details.",
+                "type": [
+                    "URL",
+                    "CreativeWork"
+                ]
+            },
+            {
+                "name": "description",
+                "desc": "A description of the item.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "disambiguatingDescription",
+                "desc": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "alternateName",
+                "desc": "An alias for the item.",
+                "type": [
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

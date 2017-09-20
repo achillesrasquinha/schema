@@ -1,3 +1,7 @@
 {
-    "type": "BookmarkAction"
+    "name": "BookmarkAction",
+    "prop": [],
+    "from": {
+        "OrganizeAction": []
+    }
 }

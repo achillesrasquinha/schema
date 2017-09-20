@@ -1,3 +1,7 @@
 {
-    "type": "Volcano"
+    "name": "Volcano",
+    "prop": [],
+    "from": {
+        "Landform": []
+    }
 }

@@ -1,3 +1,65 @@
 {
-    "type": "ParentAudience"
+    "name": "ParentAudience",
+    "prop": [
+        {
+            "name": "childMaxAge",
+            "desc": "Maximal age of the child.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "childMinAge",
+            "desc": "Minimal age of the child.",
+            "type": [
+                "Number"
+            ]
+        }
+    ],
+    "from": {
+        "PeopleAudience": [
+            {
+                "name": "suggestedMaxAge",
+                "desc": "Maximal age recommended for viewing content.",
+                "type": [
+                    "Number"
+                ]
+            },
+            {
+                "name": "requiredMinAge",
+                "desc": "Audiences defined by a person's minimum age.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "requiredGender",
+                "desc": "Audiences defined by a person's gender.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "suggestedGender",
+                "desc": "The gender of the person or audience.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "requiredMaxAge",
+                "desc": "Audiences defined by a person's maximum age.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "suggestedMinAge",
+                "desc": "Minimal age recommended for viewing content.",
+                "type": [
+                    "Number"
+                ]
+            }
+        ]
+    }
 }

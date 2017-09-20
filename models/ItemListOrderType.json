@@ -1,3 +1,7 @@
 {
-    "type": "ItemListOrderType"
+    "name": "ItemListOrderType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

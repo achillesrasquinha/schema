@@ -1,3 +1,86 @@
 {
-    "type": "ExerciseAction"
+    "name": "ExerciseAction",
+    "prop": [
+        {
+            "name": "course",
+            "desc": "A sub property of location. The course where this action was taken.",
+            "type": [
+                "Place"
+            ]
+        },
+        {
+            "name": "sportsTeam",
+            "desc": "A sub property of participant. The sports team that participated on this action.",
+            "type": [
+                "SportsTeam"
+            ]
+        },
+        {
+            "name": "sportsEvent",
+            "desc": "A sub property of location. The sports event where this action occurred.",
+            "type": [
+                "SportsEvent"
+            ]
+        },
+        {
+            "name": "distance",
+            "desc": "The distance travelled, e.g. exercising or travelling.",
+            "type": [
+                "Distance"
+            ]
+        },
+        {
+            "name": "opponent",
+            "desc": "A sub property of participant. The opponent on this action.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "sportsActivityLocation",
+            "desc": "A sub property of location. The sports activity location where this action occurred.",
+            "type": [
+                "SportsActivityLocation"
+            ]
+        },
+        {
+            "name": "toLocation",
+            "desc": "A sub property of location. The final location of the object or the agent after the action.",
+            "type": [
+                "Place"
+            ]
+        },
+        {
+            "name": "fromLocation",
+            "desc": "A sub property of location. The original location of the object or the agent before the action.",
+            "type": [
+                "Place"
+            ]
+        },
+        {
+            "name": "exerciseCourse",
+            "desc": "A sub property of location. The course where this action was taken.",
+            "type": [
+                "Place"
+            ]
+        }
+    ],
+    "from": {
+        "PlayAction": [
+            {
+                "name": "audience",
+                "desc": "An intended audience, i.e. a group for whom something was created.",
+                "type": [
+                    "Audience"
+                ]
+            },
+            {
+                "name": "event",
+                "desc": "Upcoming or past event associated with this place, organization, or action.",
+                "type": [
+                    "Event"
+                ]
+            }
+        ]
+    }
 }

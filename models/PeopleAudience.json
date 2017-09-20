@@ -1,3 +1,65 @@
 {
-    "type": "PeopleAudience"
+    "name": "PeopleAudience",
+    "prop": [
+        {
+            "name": "suggestedMaxAge",
+            "desc": "Maximal age recommended for viewing content.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "requiredMinAge",
+            "desc": "Audiences defined by a person's minimum age.",
+            "type": [
+                "Integer"
+            ]
+        },
+        {
+            "name": "requiredGender",
+            "desc": "Audiences defined by a person's gender.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "suggestedGender",
+            "desc": "The gender of the person or audience.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "requiredMaxAge",
+            "desc": "Audiences defined by a person's maximum age.",
+            "type": [
+                "Integer"
+            ]
+        },
+        {
+            "name": "suggestedMinAge",
+            "desc": "Minimal age recommended for viewing content.",
+            "type": [
+                "Number"
+            ]
+        }
+    ],
+    "from": {
+        "Audience": [
+            {
+                "name": "audienceType",
+                "desc": "The target group associated with a given audience (e.g. veterans, car owners, musicians, etc.).",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "geographicArea",
+                "desc": "The geographic area associated with the audience.",
+                "type": [
+                    "AdministrativeArea"
+                ]
+            }
+        ]
+    }
 }

@@ -1,3 +1,57 @@
 {
-    "type": "GovernmentPermit"
+    "name": "GovernmentPermit",
+    "prop": [],
+    "from": {
+        "Permit": [
+            {
+                "name": "validFor",
+                "desc": "The time validity of the permit.",
+                "type": [
+                    "Duration"
+                ]
+            },
+            {
+                "name": "validUntil",
+                "desc": "The date when the item is no longer valid.",
+                "type": [
+                    "Date"
+                ]
+            },
+            {
+                "name": "validFrom",
+                "desc": "The date when the item becomes valid.",
+                "type": [
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "issuedBy",
+                "desc": "The organization issuing the ticket or permit.",
+                "type": [
+                    "Organization"
+                ]
+            },
+            {
+                "name": "issuedThrough",
+                "desc": "The service through with the permit was granted.",
+                "type": [
+                    "Service"
+                ]
+            },
+            {
+                "name": "permitAudience",
+                "desc": "The target audience for this permit.",
+                "type": [
+                    "Audience"
+                ]
+            },
+            {
+                "name": "validIn",
+                "desc": "The geographic area where the permit is valid.",
+                "type": [
+                    "AdministrativeArea"
+                ]
+            }
+        ]
+    }
 }

@@ -1,3 +1,88 @@
 {
-    "type": "RadioSeason"
+    "name": "RadioSeason",
+    "prop": [],
+    "from": {
+        "CreativeWorkSeason": [
+            {
+                "name": "actor",
+                "desc": "An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "partOfSeries",
+                "desc": "The series to which this episode or season belongs.",
+                "type": [
+                    "CreativeWorkSeries"
+                ]
+            },
+            {
+                "name": "numberOfEpisodes",
+                "desc": "The number of episodes in this season or series.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "trailer",
+                "desc": "The trailer of a movie or tv/radio series, season, episode, etc.",
+                "type": [
+                    "VideoObject"
+                ]
+            },
+            {
+                "name": "endDate",
+                "desc": "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+                "type": [
+                    "Date",
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "episodes",
+                "desc": "An episode of a TV/radio series or season.",
+                "type": [
+                    "Episode"
+                ]
+            },
+            {
+                "name": "startDate",
+                "desc": "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+                "type": [
+                    "DateTime",
+                    "Date"
+                ]
+            },
+            {
+                "name": "director",
+                "desc": "A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "productionCompany",
+                "desc": "The production company or studio responsible for the item e.g. series, video game, episode etc.",
+                "type": [
+                    "Organization"
+                ]
+            },
+            {
+                "name": "episode",
+                "desc": "An episode of a tv, radio or game media within a series or season.",
+                "type": [
+                    "Episode"
+                ]
+            },
+            {
+                "name": "seasonNumber",
+                "desc": "Position of the season within an ordered group of seasons.",
+                "type": [
+                    "Integer",
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

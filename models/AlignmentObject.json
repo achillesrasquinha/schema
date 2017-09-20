@@ -1,3 +1,43 @@
 {
-    "type": "AlignmentObject"
+    "name": "AlignmentObject",
+    "prop": [
+        {
+            "name": "targetDescription",
+            "desc": "The description of a node in an established educational framework.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "alignmentType",
+            "desc": "A category of alignment between the learning resource and the framework node. Recommended values include: 'assesses', 'teaches', 'requires', 'textComplexity', 'readingLevel', 'educationalSubject', and 'educationalLevel'.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "targetUrl",
+            "desc": "The URL of a node in an established educational framework.",
+            "type": [
+                "URL"
+            ]
+        },
+        {
+            "name": "targetName",
+            "desc": "The name of a node in an established educational framework.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "educationalFramework",
+            "desc": "The framework to which the resource being described is aligned.",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

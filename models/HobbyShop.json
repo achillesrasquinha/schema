@@ -1,3 +1,7 @@
 {
-    "type": "HobbyShop"
+    "name": "HobbyShop",
+    "prop": [],
+    "from": {
+        "Store": []
+    }
 }

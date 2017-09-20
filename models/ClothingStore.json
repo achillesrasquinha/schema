@@ -1,3 +1,7 @@
 {
-    "type": "ClothingStore"
+    "name": "ClothingStore",
+    "prop": [],
+    "from": {
+        "Store": []
+    }
 }

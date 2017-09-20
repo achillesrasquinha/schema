@@ -1,3 +1,7 @@
 {
-    "type": "AutoRental"
+    "name": "AutoRental",
+    "prop": [],
+    "from": {
+        "AutomotiveBusiness": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "SportsClub"
+    "name": "SportsClub",
+    "prop": [],
+    "from": {
+        "SportsActivityLocation": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "MeetingRoom"
+    "name": "MeetingRoom",
+    "prop": [],
+    "from": {
+        "Room": []
+    }
 }

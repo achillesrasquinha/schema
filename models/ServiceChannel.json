@@ -1,3 +1,65 @@
 {
-    "type": "ServiceChannel"
+    "name": "ServiceChannel",
+    "prop": [
+        {
+            "name": "providesService",
+            "desc": "The service provided by this channel.",
+            "type": [
+                "Service"
+            ]
+        },
+        {
+            "name": "serviceLocation",
+            "desc": "The location (e.g. civic structure, local business, etc.) where a person can go to access the service.",
+            "type": [
+                "Place"
+            ]
+        },
+        {
+            "name": "servicePostalAddress",
+            "desc": "The address for accessing the service by mail.",
+            "type": [
+                "PostalAddress"
+            ]
+        },
+        {
+            "name": "availableLanguage",
+            "desc": "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>",
+            "type": [
+                "Text",
+                "Language"
+            ]
+        },
+        {
+            "name": "serviceSmsNumber",
+            "desc": "The number to access the service by text message.",
+            "type": [
+                "ContactPoint"
+            ]
+        },
+        {
+            "name": "serviceUrl",
+            "desc": "The website to access the service.",
+            "type": [
+                "URL"
+            ]
+        },
+        {
+            "name": "servicePhone",
+            "desc": "The phone number to use to access the service.",
+            "type": [
+                "ContactPoint"
+            ]
+        },
+        {
+            "name": "processingTime",
+            "desc": "Estimated processing time for the service using this channel.",
+            "type": [
+                "Duration"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

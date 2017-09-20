@@ -1,3 +1,7 @@
 {
-    "type": "SuspendAction"
+    "name": "SuspendAction",
+    "prop": [],
+    "from": {
+        "ControlAction": []
+    }
 }

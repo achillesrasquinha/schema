@@ -1,3 +1,7 @@
 {
-    "type": "UnRegisterAction"
+    "name": "UnRegisterAction",
+    "prop": [],
+    "from": {
+        "InteractAction": []
+    }
 }

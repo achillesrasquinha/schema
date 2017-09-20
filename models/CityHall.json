@@ -1,3 +1,7 @@
 {
-    "type": "CityHall"
+    "name": "CityHall",
+    "prop": [],
+    "from": {
+        "GovernmentBuilding": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "Quantity"
+    "name": "Quantity",
+    "prop": [],
+    "from": {
+        "Intangible": []
+    }
 }

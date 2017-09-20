@@ -1,3 +1,7 @@
 {
-    "type": "ResumeAction"
+    "name": "ResumeAction",
+    "prop": [],
+    "from": {
+        "ControlAction": []
+    }
 }

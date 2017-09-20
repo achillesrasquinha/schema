@@ -1,3 +1,7 @@
 {
-    "type": "BowlingAlley"
+    "name": "BowlingAlley",
+    "prop": [],
+    "from": {
+        "SportsActivityLocation": []
+    }
 }

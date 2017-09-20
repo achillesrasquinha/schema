@@ -1,3 +1,7 @@
 {
-    "type": "TheaterGroup"
+    "name": "TheaterGroup",
+    "prop": [],
+    "from": {
+        "PerformingGroup": []
+    }
 }

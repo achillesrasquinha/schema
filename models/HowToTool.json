@@ -1,3 +1,17 @@
 {
-    "type": "HowToTool"
+    "name": "HowToTool",
+    "prop": [],
+    "from": {
+        "HowToItem": [
+            {
+                "name": "requiredQuantity",
+                "desc": "The required quantity of the item(s).",
+                "type": [
+                    "Number",
+                    "QuantitativeValue",
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

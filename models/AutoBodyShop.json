@@ -1,3 +1,7 @@
 {
-    "type": "AutoBodyShop"
+    "name": "AutoBodyShop",
+    "prop": [],
+    "from": {
+        "AutomotiveBusiness": []
+    }
 }

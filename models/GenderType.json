@@ -1,3 +1,7 @@
 {
-    "type": "GenderType"
+    "name": "GenderType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

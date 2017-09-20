@@ -1,3 +1,26 @@
 {
-    "type": "HowToSupply"
+    "name": "HowToSupply",
+    "prop": [
+        {
+            "name": "estimatedCost",
+            "desc": "The estimated cost of the supply or supplies consumed when performing instructions.",
+            "type": [
+                "Text",
+                "MonetaryAmount"
+            ]
+        }
+    ],
+    "from": {
+        "HowToItem": [
+            {
+                "name": "requiredQuantity",
+                "desc": "The required quantity of the item(s).",
+                "type": [
+                    "Number",
+                    "QuantitativeValue",
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

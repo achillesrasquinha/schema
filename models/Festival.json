@@ -1,3 +1,268 @@
 {
-    "type": "Festival"
+    "name": "Festival",
+    "prop": [],
+    "from": {
+        "Event": [
+            {
+                "name": "about",
+                "desc": "The subject matter of the content.",
+                "type": [
+                    "Thing"
+                ]
+            },
+            {
+                "name": "funder",
+                "desc": "A person or organization that supports (sponsors) something through some kind of financial contribution.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "workFeatured",
+                "desc": "A work featured in some event, e.g. exhibited in an ExhibitionEvent.\n       Specific subproperties are available for workPerformed (e.g. a play), or a workPresented (a Movie at a ScreeningEvent).",
+                "type": [
+                    "CreativeWork"
+                ]
+            },
+            {
+                "name": "audience",
+                "desc": "An intended audience, i.e. a group for whom something was created.",
+                "type": [
+                    "Audience"
+                ]
+            },
+            {
+                "name": "remainingAttendeeCapacity",
+                "desc": "The number of attendee places for an event that remain unallocated.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "actor",
+                "desc": "An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "performers",
+                "desc": "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "endDate",
+                "desc": "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+                "type": [
+                    "Date",
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "doorTime",
+                "desc": "The time admission will commence.",
+                "type": [
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "contributor",
+                "desc": "A secondary contributor to the CreativeWork or Event.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "maximumAttendeeCapacity",
+                "desc": "The total number of individuals that may attend an event or venue.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "typicalAgeRange",
+                "desc": "The typical expected age range, e.g. '7-9', '11-'.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "organizer",
+                "desc": "An organizer of an Event.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "attendees",
+                "desc": "A person attending the event.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "aggregateRating",
+                "desc": "The overall rating, based on a collection of reviews or ratings, of the item.",
+                "type": [
+                    "AggregateRating"
+                ]
+            },
+            {
+                "name": "subEvent",
+                "desc": "An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference.",
+                "type": [
+                    "Event"
+                ]
+            },
+            {
+                "name": "subEvents",
+                "desc": "Events that are a part of this event. For example, a conference event includes many presentations, each subEvents of the conference.",
+                "type": [
+                    "Event"
+                ]
+            },
+            {
+                "name": "offers",
+                "desc": "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.",
+                "type": [
+                    "Offer"
+                ]
+            },
+            {
+                "name": "inLanguage",
+                "desc": "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>.",
+                "type": [
+                    "Language",
+                    "Text"
+                ]
+            },
+            {
+                "name": "attendee",
+                "desc": "A person or organization attending the event.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "workPerformed",
+                "desc": "A work performed in some event, for example a play performed in a TheaterEvent.",
+                "type": [
+                    "CreativeWork"
+                ]
+            },
+            {
+                "name": "eventStatus",
+                "desc": "An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.",
+                "type": [
+                    "EventStatusType"
+                ]
+            },
+            {
+                "name": "startDate",
+                "desc": "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+                "type": [
+                    "DateTime",
+                    "Date"
+                ]
+            },
+            {
+                "name": "director",
+                "desc": "A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
+                "type": [
+                    "Person"
+                ]
+            },
+            {
+                "name": "superEvent",
+                "desc": "An event that this event is a part of. For example, a collection of individual music performances might each have a music festival as their superEvent.",
+                "type": [
+                    "Event"
+                ]
+            },
+            {
+                "name": "duration",
+                "desc": "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>.",
+                "type": [
+                    "Duration"
+                ]
+            },
+            {
+                "name": "translator",
+                "desc": "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "previousStartDate",
+                "desc": "Used in conjunction with eventStatus for rescheduled or cancelled events. This property contains the previously scheduled start date. For rescheduled events, the startDate property should be used for the newly scheduled start date. In the (rare) case of an event that has been postponed and rescheduled multiple times, this field may be repeated.",
+                "type": [
+                    "Date"
+                ]
+            },
+            {
+                "name": "review",
+                "desc": "A review of the item.",
+                "type": [
+                    "Review"
+                ]
+            },
+            {
+                "name": "sponsor",
+                "desc": "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "location",
+                "desc": "The location of for example where the event is happening, an organization is located, or where an action takes place.",
+                "type": [
+                    "Place",
+                    "PostalAddress",
+                    "Text"
+                ]
+            },
+            {
+                "name": "recordedIn",
+                "desc": "The CreativeWork that captured all or part of this Event.",
+                "type": [
+                    "CreativeWork"
+                ]
+            },
+            {
+                "name": "composer",
+                "desc": "The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "isAccessibleForFree",
+                "desc": "A flag to signal that the item, event, or place is accessible for free.",
+                "type": [
+                    "Boolean"
+                ]
+            },
+            {
+                "name": "performer",
+                "desc": "A performer at the event&#x2014;for example, a presenter, musician, musical group or actor.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            }
+        ]
+    }
 }

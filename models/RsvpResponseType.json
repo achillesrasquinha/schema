@@ -1,3 +1,7 @@
 {
-    "type": "RsvpResponseType"
+    "name": "RsvpResponseType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

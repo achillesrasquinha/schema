@@ -1,3 +1,29 @@
 {
-    "type": "Answer"
+    "name": "Answer",
+    "prop": [],
+    "from": {
+        "Comment": [
+            {
+                "name": "upvoteCount",
+                "desc": "The number of upvotes this question, answer or comment has received from the community.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "parentItem",
+                "desc": "The parent of a question, answer or item in general.",
+                "type": [
+                    "Question"
+                ]
+            },
+            {
+                "name": "downvoteCount",
+                "desc": "The number of downvotes this question, answer or comment has received from the community.",
+                "type": [
+                    "Integer"
+                ]
+            }
+        ]
+    }
 }

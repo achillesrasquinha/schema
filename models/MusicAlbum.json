@@ -1,3 +1,59 @@
 {
-    "type": "MusicAlbum"
+    "name": "MusicAlbum",
+    "prop": [
+        {
+            "name": "albumProductionType",
+            "desc": "Classification of the album by it's type of content: soundtrack, live album, studio album, etc.",
+            "type": [
+                "MusicAlbumProductionType"
+            ]
+        },
+        {
+            "name": "albumReleaseType",
+            "desc": "The kind of release which this album is: single, EP or album.",
+            "type": [
+                "MusicAlbumReleaseType"
+            ]
+        },
+        {
+            "name": "byArtist",
+            "desc": "The artist that performed this album or recording.",
+            "type": [
+                "MusicGroup"
+            ]
+        },
+        {
+            "name": "albumRelease",
+            "desc": "A release of this album.",
+            "type": [
+                "MusicRelease"
+            ]
+        }
+    ],
+    "from": {
+        "MusicPlaylist": [
+            {
+                "name": "track",
+                "desc": "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
+                "type": [
+                    "ItemList",
+                    "MusicRecording"
+                ]
+            },
+            {
+                "name": "numTracks",
+                "desc": "The number of tracks in this album or playlist.",
+                "type": [
+                    "Integer"
+                ]
+            },
+            {
+                "name": "tracks",
+                "desc": "A music recording (track)&#x2014;usually a single song.",
+                "type": [
+                    "MusicRecording"
+                ]
+            }
+        ]
+    }
 }

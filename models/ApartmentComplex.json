@@ -1,3 +1,7 @@
 {
-    "type": "ApartmentComplex"
+    "name": "ApartmentComplex",
+    "prop": [],
+    "from": {
+        "Residence": []
+    }
 }

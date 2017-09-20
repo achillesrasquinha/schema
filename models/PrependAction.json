@@ -1,3 +1,15 @@
 {
-    "type": "PrependAction"
+    "name": "PrependAction",
+    "prop": [],
+    "from": {
+        "InsertAction": [
+            {
+                "name": "toLocation",
+                "desc": "A sub property of location. The final location of the object or the agent after the action.",
+                "type": [
+                    "Place"
+                ]
+            }
+        ]
+    }
 }

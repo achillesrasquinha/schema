@@ -1,3 +1,7 @@
 {
-    "type": "HousePainter"
+    "name": "HousePainter",
+    "prop": [],
+    "from": {
+        "HomeAndConstructionBusiness": []
+    }
 }

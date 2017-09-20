@@ -1,3 +1,7 @@
 {
-    "type": "UserDownloads"
+    "name": "UserDownloads",
+    "prop": [],
+    "from": {
+        "UserInteraction": []
+    }
 }

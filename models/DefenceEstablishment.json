@@ -1,3 +1,7 @@
 {
-    "type": "DefenceEstablishment"
+    "name": "DefenceEstablishment",
+    "prop": [],
+    "from": {
+        "GovernmentBuilding": []
+    }
 }

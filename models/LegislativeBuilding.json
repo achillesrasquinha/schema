@@ -1,3 +1,7 @@
 {
-    "type": "LegislativeBuilding"
+    "name": "LegislativeBuilding",
+    "prop": [],
+    "from": {
+        "GovernmentBuilding": []
+    }
 }

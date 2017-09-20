@@ -1,3 +1,7 @@
 {
-    "type": "DisagreeAction"
+    "name": "DisagreeAction",
+    "prop": [],
+    "from": {
+        "ReactAction": []
+    }
 }

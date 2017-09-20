@@ -1,3 +1,30 @@
 {
-    "type": "CookAction"
+    "name": "CookAction",
+    "prop": [
+        {
+            "name": "recipe",
+            "desc": "A sub property of instrument. The recipe/instructions used to perform the action.",
+            "type": [
+                "Recipe"
+            ]
+        },
+        {
+            "name": "foodEvent",
+            "desc": "A sub property of location. The specific food event where the action occurred.",
+            "type": [
+                "FoodEvent"
+            ]
+        },
+        {
+            "name": "foodEstablishment",
+            "desc": "A sub property of location. The specific food establishment where the action occurred.",
+            "type": [
+                "FoodEstablishment",
+                "Place"
+            ]
+        }
+    ],
+    "from": {
+        "CreateAction": []
+    }
 }

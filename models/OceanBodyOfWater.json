@@ -1,3 +1,7 @@
 {
-    "type": "OceanBodyOfWater"
+    "name": "OceanBodyOfWater",
+    "prop": [],
+    "from": {
+        "BodyOfWater": []
+    }
 }

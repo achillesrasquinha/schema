@@ -1,3 +1,83 @@
 {
-    "type": "EmailMessage"
+    "name": "EmailMessage",
+    "prop": [],
+    "from": {
+        "Message": [
+            {
+                "name": "dateRead",
+                "desc": "The date/time at which the message has been read by the recipient if a single recipient exists.",
+                "type": [
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "bccRecipient",
+                "desc": "A sub property of recipient. The recipient blind copied on a message.",
+                "type": [
+                    "Person",
+                    "Organization",
+                    "ContactPoint"
+                ]
+            },
+            {
+                "name": "dateSent",
+                "desc": "The date/time at which the message was sent.",
+                "type": [
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "ccRecipient",
+                "desc": "A sub property of recipient. The recipient copied on a message.",
+                "type": [
+                    "Organization",
+                    "ContactPoint",
+                    "Person"
+                ]
+            },
+            {
+                "name": "recipient",
+                "desc": "A sub property of participant. The participant who is at the receiving end of the action.",
+                "type": [
+                    "Person",
+                    "Organization",
+                    "ContactPoint",
+                    "Audience"
+                ]
+            },
+            {
+                "name": "sender",
+                "desc": "A sub property of participant. The participant who is at the sending end of the action.",
+                "type": [
+                    "Person",
+                    "Audience",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "messageAttachment",
+                "desc": "A CreativeWork attached to the message.",
+                "type": [
+                    "CreativeWork"
+                ]
+            },
+            {
+                "name": "dateReceived",
+                "desc": "The date/time the message was received if a single recipient exists.",
+                "type": [
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "toRecipient",
+                "desc": "A sub property of recipient. The recipient who was directly sent the message.",
+                "type": [
+                    "ContactPoint",
+                    "Audience",
+                    "Organization",
+                    "Person"
+                ]
+            }
+        ]
+    }
 }

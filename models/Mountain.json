@@ -1,3 +1,7 @@
 {
-    "type": "Mountain"
+    "name": "Mountain",
+    "prop": [],
+    "from": {
+        "Landform": []
+    }
 }

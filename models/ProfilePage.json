@@ -1,3 +1,73 @@
 {
-    "type": "ProfilePage"
+    "name": "ProfilePage",
+    "prop": [],
+    "from": {
+        "WebPage": [
+            {
+                "name": "breadcrumb",
+                "desc": "A set of links that can help a user understand and navigate a website hierarchy.",
+                "type": [
+                    "Text",
+                    "BreadcrumbList"
+                ]
+            },
+            {
+                "name": "significantLink",
+                "desc": "One of the more significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.",
+                "type": [
+                    "URL"
+                ]
+            },
+            {
+                "name": "relatedLink",
+                "desc": "A link related to this web page, for example to other related web pages.",
+                "type": [
+                    "URL"
+                ]
+            },
+            {
+                "name": "lastReviewed",
+                "desc": "Date on which the content on this web page was last reviewed for accuracy and/or completeness.",
+                "type": [
+                    "Date"
+                ]
+            },
+            {
+                "name": "mainContentOfPage",
+                "desc": "Indicates if this web page element is the main subject of the page.",
+                "type": [
+                    "WebPageElement"
+                ]
+            },
+            {
+                "name": "reviewedBy",
+                "desc": "People or organizations that have reviewed the content on this web page for accuracy and/or completeness.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "primaryImageOfPage",
+                "desc": "Indicates the main image on the page.",
+                "type": [
+                    "ImageObject"
+                ]
+            },
+            {
+                "name": "significantLinks",
+                "desc": "The most significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.",
+                "type": [
+                    "URL"
+                ]
+            },
+            {
+                "name": "specialty",
+                "desc": "One of the domain specialities to which this web page's content applies.",
+                "type": [
+                    "Specialty"
+                ]
+            }
+        ]
+    }
 }

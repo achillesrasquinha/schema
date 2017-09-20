@@ -1,3 +1,15 @@
 {
-    "type": "JoinAction"
+    "name": "JoinAction",
+    "prop": [
+        {
+            "name": "event",
+            "desc": "Upcoming or past event associated with this place, organization, or action.",
+            "type": [
+                "Event"
+            ]
+        }
+    ],
+    "from": {
+        "InteractAction": []
+    }
 }

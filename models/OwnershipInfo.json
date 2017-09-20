@@ -1,3 +1,38 @@
 {
-    "type": "OwnershipInfo"
+    "name": "OwnershipInfo",
+    "prop": [
+        {
+            "name": "typeOfGood",
+            "desc": "The product that this structured value is referring to.",
+            "type": [
+                "Service",
+                "Product"
+            ]
+        },
+        {
+            "name": "ownedThrough",
+            "desc": "The date and time of giving up ownership on the product.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "acquiredFrom",
+            "desc": "The organization or person from which the product was acquired.",
+            "type": [
+                "Person",
+                "Organization"
+            ]
+        },
+        {
+            "name": "ownedFrom",
+            "desc": "The date and time of obtaining the product.",
+            "type": [
+                "DateTime"
+            ]
+        }
+    ],
+    "from": {
+        "StructuredValue": []
+    }
 }

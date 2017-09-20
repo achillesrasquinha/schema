@@ -1,3 +1,51 @@
 {
-    "type": "BroadcastEvent"
+    "name": "BroadcastEvent",
+    "prop": [
+        {
+            "name": "videoFormat",
+            "desc": "The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "isLiveBroadcast",
+            "desc": "True is the broadcast is of a live event.",
+            "type": [
+                "Boolean"
+            ]
+        },
+        {
+            "name": "broadcastOfEvent",
+            "desc": "The event being broadcast such as a sporting event or awards ceremony.",
+            "type": [
+                "Event"
+            ]
+        }
+    ],
+    "from": {
+        "PublicationEvent": [
+            {
+                "name": "publishedOn",
+                "desc": "A broadcast service associated with the publication event.",
+                "type": [
+                    "BroadcastService"
+                ]
+            },
+            {
+                "name": "free",
+                "desc": "A flag to signal that the item, event, or place is accessible for free.",
+                "type": [
+                    "Boolean"
+                ]
+            },
+            {
+                "name": "isAccessibleForFree",
+                "desc": "A flag to signal that the item, event, or place is accessible for free.",
+                "type": [
+                    "Boolean"
+                ]
+            }
+        ]
+    }
 }

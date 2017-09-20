@@ -1,3 +1,7 @@
 {
-    "type": "BodyOfWater"
+    "name": "BodyOfWater",
+    "prop": [],
+    "from": {
+        "Landform": []
+    }
 }

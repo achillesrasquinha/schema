@@ -1,3 +1,37 @@
 {
-    "type": "Seat"
+    "name": "Seat",
+    "prop": [
+        {
+            "name": "seatingType",
+            "desc": "The type/class of the seat.",
+            "type": [
+                "Text",
+                "QualitativeValue"
+            ]
+        },
+        {
+            "name": "seatSection",
+            "desc": "The section location of the reserved seat (e.g. Orchestra).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "seatRow",
+            "desc": "The row location of the reserved seat (e.g., B).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "seatNumber",
+            "desc": "The location of the reserved seat (e.g., 27).",
+            "type": [
+                "Text"
+            ]
+        }
+    ],
+    "from": {
+        "Intangible": []
+    }
 }

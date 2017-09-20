@@ -1,3 +1,128 @@
 {
-    "type": "FoodEstablishmentReservation"
+    "name": "FoodEstablishmentReservation",
+    "prop": [
+        {
+            "name": "startTime",
+            "desc": "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from <em>January</em> to December.</p>\n\n<p>Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "endTime",
+            "desc": "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to <em>December</em>.</p>\n\n<p>Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "partySize",
+            "desc": "Number of people the reservation should accommodate.",
+            "type": [
+                "Integer",
+                "QuantitativeValue"
+            ]
+        }
+    ],
+    "from": {
+        "Reservation": [
+            {
+                "name": "provider",
+                "desc": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "programMembershipUsed",
+                "desc": "Any membership in a frequent flyer, hotel loyalty program, etc. being applied to the reservation.",
+                "type": [
+                    "ProgramMembership"
+                ]
+            },
+            {
+                "name": "reservationStatus",
+                "desc": "The current status of the reservation.",
+                "type": [
+                    "ReservationStatusType"
+                ]
+            },
+            {
+                "name": "underName",
+                "desc": "The person or organization the reservation or ticket is for.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "bookingAgent",
+                "desc": "'bookingAgent' is an out-dated term indicating a 'broker' that serves as a booking agent.",
+                "type": [
+                    "Organization",
+                    "Person"
+                ]
+            },
+            {
+                "name": "totalPrice",
+                "desc": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.",
+                "type": [
+                    "Number",
+                    "Text",
+                    "PriceSpecification"
+                ]
+            },
+            {
+                "name": "reservationFor",
+                "desc": "The thing -- flight, event, restaurant,etc. being reserved.",
+                "type": [
+                    "Thing"
+                ]
+            },
+            {
+                "name": "priceCurrency",
+                "desc": "The currency (in 3-letter ISO 4217 format) of the price or a price component, when attached to <a class=\"localLink\" href=\"http://schema.org/PriceSpecification\">PriceSpecification</a> and its subtypes.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "broker",
+                "desc": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
+                "type": [
+                    "Person",
+                    "Organization"
+                ]
+            },
+            {
+                "name": "modifiedTime",
+                "desc": "The date and time the reservation was modified.",
+                "type": [
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "bookingTime",
+                "desc": "The date and time the reservation was booked.",
+                "type": [
+                    "DateTime"
+                ]
+            },
+            {
+                "name": "reservationId",
+                "desc": "A unique identifier for the reservation.",
+                "type": [
+                    "Text"
+                ]
+            },
+            {
+                "name": "reservedTicket",
+                "desc": "A ticket associated with the reservation.",
+                "type": [
+                    "Ticket"
+                ]
+            }
+        ]
+    }
 }

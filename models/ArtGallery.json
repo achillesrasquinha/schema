@@ -1,3 +1,7 @@
 {
-    "type": "ArtGallery"
+    "name": "ArtGallery",
+    "prop": [],
+    "from": {
+        "EntertainmentBusiness": []
+    }
 }

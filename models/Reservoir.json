@@ -1,3 +1,7 @@
 {
-    "type": "Reservoir"
+    "name": "Reservoir",
+    "prop": [],
+    "from": {
+        "BodyOfWater": []
+    }
 }

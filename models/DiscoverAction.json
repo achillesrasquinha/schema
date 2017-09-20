@@ -1,3 +1,7 @@
 {
-    "type": "DiscoverAction"
+    "name": "DiscoverAction",
+    "prop": [],
+    "from": {
+        "FindAction": []
+    }
 }

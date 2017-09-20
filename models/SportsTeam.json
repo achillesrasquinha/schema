@@ -1,3 +1,31 @@
 {
-    "type": "SportsTeam"
+    "name": "SportsTeam",
+    "prop": [
+        {
+            "name": "athlete",
+            "desc": "A person that acts as performing member of a sports team; a player as opposed to a coach.",
+            "type": [
+                "Person"
+            ]
+        },
+        {
+            "name": "coach",
+            "desc": "A person that acts in a coaching role for a sports team.",
+            "type": [
+                "Person"
+            ]
+        }
+    ],
+    "from": {
+        "SportsOrganization": [
+            {
+                "name": "sport",
+                "desc": "A type of sport (e.g. Baseball).",
+                "type": [
+                    "Text",
+                    "URL"
+                ]
+            }
+        ]
+    }
 }

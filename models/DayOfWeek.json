@@ -1,3 +1,7 @@
 {
-    "type": "DayOfWeek"
+    "name": "DayOfWeek",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

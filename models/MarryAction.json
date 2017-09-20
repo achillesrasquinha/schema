@@ -1,3 +1,7 @@
 {
-    "type": "MarryAction"
+    "name": "MarryAction",
+    "prop": [],
+    "from": {
+        "InteractAction": []
+    }
 }

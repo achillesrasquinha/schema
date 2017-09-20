@@ -1,3 +1,7 @@
 {
-    "type": "PawnShop"
+    "name": "PawnShop",
+    "prop": [],
+    "from": {
+        "Store": []
+    }
 }

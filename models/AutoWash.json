@@ -1,3 +1,7 @@
 {
-    "type": "AutoWash"
+    "name": "AutoWash",
+    "prop": [],
+    "from": {
+        "AutomotiveBusiness": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "RejectAction"
+    "name": "RejectAction",
+    "prop": [],
+    "from": {
+        "AllocateAction": []
+    }
 }

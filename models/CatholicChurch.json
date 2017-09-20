@@ -1,3 +1,7 @@
 {
-    "type": "CatholicChurch"
+    "name": "CatholicChurch",
+    "prop": [],
+    "from": {
+        "PlaceOfWorship": []
+    }
 }

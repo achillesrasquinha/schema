@@ -1,3 +1,32 @@
 {
-    "type": "CreditCard"
+    "name": "CreditCard",
+    "prop": [],
+    "from": {
+        "PaymentCard": [],
+        "LoanOrCredit": [
+            {
+                "name": "loanTerm",
+                "desc": "The duration of the loan or credit agreement.",
+                "type": [
+                    "QuantitativeValue"
+                ]
+            },
+            {
+                "name": "amount",
+                "desc": "The amount of money.",
+                "type": [
+                    "MonetaryAmount",
+                    "Number"
+                ]
+            },
+            {
+                "name": "requiredCollateral",
+                "desc": "Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)",
+                "type": [
+                    "Thing",
+                    "Text"
+                ]
+            }
+        ]
+    }
 }

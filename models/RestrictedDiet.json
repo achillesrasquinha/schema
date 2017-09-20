@@ -1,3 +1,7 @@
 {
-    "type": "RestrictedDiet"
+    "name": "RestrictedDiet",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

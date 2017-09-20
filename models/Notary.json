@@ -1,3 +1,7 @@
 {
-    "type": "Notary"
+    "name": "Notary",
+    "prop": [],
+    "from": {
+        "LegalService": []
+    }
 }

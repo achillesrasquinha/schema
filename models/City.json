@@ -1,3 +1,7 @@
 {
-    "type": "City"
+    "name": "City",
+    "prop": [],
+    "from": {
+        "AdministrativeArea": []
+    }
 }

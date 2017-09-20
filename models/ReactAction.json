@@ -1,3 +1,7 @@
 {
-    "type": "ReactAction"
+    "name": "ReactAction",
+    "prop": [],
+    "from": {
+        "AssessAction": []
+    }
 }

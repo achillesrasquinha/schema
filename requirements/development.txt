@@ -1,3 +1,4 @@
 setuptools
 twine
+beautifulsoup4
 ipython

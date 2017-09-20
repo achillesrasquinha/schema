@@ -1,3 +1,53 @@
 {
-    "type": "MonetaryAmount"
+    "name": "MonetaryAmount",
+    "prop": [
+        {
+            "name": "minValue",
+            "desc": "The lower value of some characteristic or property.",
+            "type": [
+                "Number"
+            ]
+        },
+        {
+            "name": "currency",
+            "desc": "The currency in which the monetary amount is expressed (in 3-letter <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a> format).",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "value",
+            "desc": "<p>The value of the quantitative value or property value node.</p>\n\n<ul>\n<li>For <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> and <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a>, the recommended type for values is 'Number'.</li>\n<li>For <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li>\n</ul>\n",
+            "type": [
+                "StructuredValue",
+                "Number",
+                "Boolean",
+                "Text"
+            ]
+        },
+        {
+            "name": "validFrom",
+            "desc": "The date when the item becomes valid.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "validThrough",
+            "desc": "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "maxValue",
+            "desc": "The upper value of some characteristic or property.",
+            "type": [
+                "Number"
+            ]
+        }
+    ],
+    "from": {
+        "StructuredValue": []
+    }
 }

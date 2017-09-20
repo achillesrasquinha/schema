@@ -1,3 +1,45 @@
 {
-    "type": "UserComments"
+    "name": "UserComments",
+    "prop": [
+        {
+            "name": "commentText",
+            "desc": "The text of the UserComment.",
+            "type": [
+                "Text"
+            ]
+        },
+        {
+            "name": "discusses",
+            "desc": "Specifies the CreativeWork associated with the UserComment.",
+            "type": [
+                "CreativeWork"
+            ]
+        },
+        {
+            "name": "commentTime",
+            "desc": "The time at which the UserComment was made.",
+            "type": [
+                "Date",
+                "DateTime"
+            ]
+        },
+        {
+            "name": "creator",
+            "desc": "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.",
+            "type": [
+                "Organization",
+                "Person"
+            ]
+        },
+        {
+            "name": "replyToUrl",
+            "desc": "The URL at which a reply may be posted to the specified UserComment.",
+            "type": [
+                "URL"
+            ]
+        }
+    ],
+    "from": {
+        "UserInteraction": []
+    }
 }

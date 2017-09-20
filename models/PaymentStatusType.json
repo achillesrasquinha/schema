@@ -1,3 +1,7 @@
 {
-    "type": "PaymentStatusType"
+    "name": "PaymentStatusType",
+    "prop": [],
+    "from": {
+        "Enumeration": []
+    }
 }

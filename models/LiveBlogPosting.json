@@ -1,3 +1,29 @@
 {
-    "type": "LiveBlogPosting"
+    "name": "LiveBlogPosting",
+    "prop": [
+        {
+            "name": "coverageStartTime",
+            "desc": "The time when the live blog will begin covering the Event. Note that coverage may begin before the Event's start time. The LiveBlogPosting may also be created before coverage begins.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "coverageEndTime",
+            "desc": "The time when the live blog will stop covering the Event. Note that coverage may continue after the Event concludes.",
+            "type": [
+                "DateTime"
+            ]
+        },
+        {
+            "name": "liveBlogUpdate",
+            "desc": "An update to the LiveBlog.",
+            "type": [
+                "BlogPosting"
+            ]
+        }
+    ],
+    "from": {
+        "BlogPosting": []
+    }
 }

@@ -1,3 +1,7 @@
 {
-    "type": "Continent"
+    "name": "Continent",
+    "prop": [],
+    "from": {
+        "Landform": []
+    }
 }

@@ -1,3 +1,15 @@
 {
-    "type": "CollegeOrUniversity"
+    "name": "CollegeOrUniversity",
+    "prop": [],
+    "from": {
+        "EducationalOrganization": [
+            {
+                "name": "alumni",
+                "desc": "Alumni of an organization.",
+                "type": [
+                    "Person"
+                ]
+            }
+        ]
+    }
 }
