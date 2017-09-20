@@ -1,9 +1,9 @@
 setuptools
 twine
-beautifulsoup4
 ipython
 Sphinx
 six
 requests
 tqdm
 pytest
+pytest-cov

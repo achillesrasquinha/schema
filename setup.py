@@ -15,11 +15,14 @@ class CleanCommand(Clean):
 
         basedir = os.path.abspath(os.path.dirname(__file__))
 
-        for dirname in ['build', '.cache', 'dist', '{name}.egg-info'.format(name = package['name'])]:
-            abspath = os.path.join(basedir, dirname)
+        for relpath in ['build', '.cache', '.coverage', 'dist', '{name}.egg-info'.format(name = package['name'])]:
+            abspath = os.path.join(basedir, relpath)
             
             if os.path.exists(abspath):
-                shutil.rmtree(abspath)
+                if os.path.isfile(abspath):
+                    os.remove(abspath)
+                else:
+                    shutil.rmtree(abspath)
 
         for dirpath, dirnames, filenames in os.walk(basedir):
             for filename in filenames:

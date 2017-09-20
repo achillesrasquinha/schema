@@ -9,8 +9,12 @@ from schema.util import (
 
 def test_assign_if_none():
     assert assign_if_none('foo', 'bar') == 'foo'
-    assert assign_if_none(None,  'bar') == 'bar'
+    assert assign_if_none(None , 'bar') == 'bar'
 
 def test_get_type_name():
     assert get_type_name('foo') == 'str'
     assert get_type_name(12345) == 'int'
+    assert get_type_name(dict ) == 'type'
+    assert get_type_name(type ) == 'type'
+
+# def test_makedirs():

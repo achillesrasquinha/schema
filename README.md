@@ -29,53 +29,13 @@ $ pip install frappe-schema
 
 ```python
 >>> import schema
->>> thing = schema.Schema('Thing')
+>>> thing = schema.Schema('Thing', dict(url = 'http://bit.ly/2fbwx4m'))
 ```
 
-#### JSON Schemas
-##### Tree
-```json
-{
-    "name": "Thing",
-    "desc": "The most generic type of item.",
-    "type": "core",
-    "children":
-    [
-        {
-            "name": "Action",
-            "children":
-            [
-                
-            ]
-        }
-    ]
-}
-```
-
-##### Type
-```json
-{
-    "name": "Hospital",
-    "prop":
-    [
-        {
-            "name": "availableService",
-            "type": ["MedicalProcedure", "MedicalTest", "MedicalTherapy"],
-            "desc": "A medical service available from this provider."
-        }
-    ],
-    "from":
-    {
-        "Place":
-        [
-            {
-                "name": "additionalProperty",
-                "type": ["PropertyValue"],
-                "desc": "A property-value pair representing an additional characteristics of the entitity..."
-            }   
-        ]
-    },
-}
+##### Seamless Object-Relational Mapping (TODO)
+```python
+>>> db = schema.DB('sqlite', 'foo.db')
+>>> db.insert(thing)
 ```
 
 #### License

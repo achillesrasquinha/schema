@@ -26,7 +26,9 @@ install:
 test:
 	make install
 
-	pytest $(SOURCEDIR)
+	py.test --cov=$(SOURCEDIR)
+
+	python setup.py clean
 
 build:
 	rm -rf models/*
