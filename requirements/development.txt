@@ -1,3 +1,6 @@
 setuptools
 twine
 ipython
+Flask
+Flask-APScheduler
+gunicorn

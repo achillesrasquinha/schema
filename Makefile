@@ -1,6 +1,7 @@
 .PHONY: build
 
 PYTHON   ?= python
+IPYTHON  ?= ipython
 
 BASEDIR   = $(realpath .)
 PACKAGE   = schema
@@ -23,6 +24,9 @@ install:
 
 	make clean
 
+console:
+	$(IPYTHON)
+
 test:
 	make install
 
@@ -30,10 +34,8 @@ test:
 
 	python setup.py clean
 
-build:
-	rm -rf models/*
-	
-	$(PYTHON) -B -m bot --dest $(MODELSDIR)
+run:
+	cd bot && gunicorn bot.app:app
 
 all:
 	make install test clean

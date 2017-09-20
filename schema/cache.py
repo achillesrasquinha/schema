@@ -56,3 +56,6 @@ class Cache(object):
                 data = json.load(f)
 
         return data
+
+    def all(self):
+        pass

@@ -1,6 +1,9 @@
 setuptools
 twine
 ipython
+Flask
+Flask-APScheduler
+gunicorn
 Sphinx
 six
 requests
