@@ -1,6 +1,7 @@
 <div align="center">
-    <img src=".github/logo.png" width="200">
-    <h1>Schema</h1>
+    <img src=".github/logo.png" width="256">
+    <h1>schema</h1>
+    <h4>metadata, for humans</h4>
 </div>
 
 ### Table of Contents
