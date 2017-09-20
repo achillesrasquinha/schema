@@ -6,6 +6,9 @@ MESSAGES = \
 class SchemaError(Exception):
     pass
 
+class SchemaValidationError(Exception):
+    pass
+
 def raise_not_implemented_error():
     raise NotImplementedError
 

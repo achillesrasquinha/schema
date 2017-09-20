@@ -9,39 +9,38 @@ import json
 import requests
 
 # imports - module imports
-from schema.error import SchemaError
-from schema.util  import assign_if_none, makedirs
+from schema.error        import SchemaError
+from schema.util         import assign_if_none, makedirs
+from schema.util.checker import check_str
 
 class Cache(object):
-    def __init__(self, location = None, dirname = None):
-        self.location = assign_if_none(location, os.path.expanduser('~'))
-        self.dirname  = assign_if_none(dirname,  '.schema')
+    def __init__(self, location = None, dirname = None, version = None):
+        if location != None:
+            check_str(location, raise_err = True)
+        if dirname  != None:
+            check_str(dirname , raise_err = True)
+        if version  != None:
+            check_str(version , raise_err = True)
 
-    def create(self, exists_ok = True, refresh = False, branch = None, indent = 4):
-        branch        = assign_if_none(branch, 'dev')
-        
+        self.location = assign_if_none(location, os.path.expanduser('~'))
+        self.dirname  = assign_if_none(dirname , '.schema')
+        self.version  = assign_if_none(version , 'dev')
+
+    def create(self, exists_ok = True):
         self.basepath = os.path.join(self.location, self.dirname)
         self.metapath = os.path.join(self.basepath, 'models')
 
         makedirs(self.metapath, exists_ok = exists_ok)
 
-        self.treepath = os.path.join(self.metapath, 'tree.json')
-        if not os.path.exists(self.treepath) or refresh:
-            response = requests.get('https://cdn.rawgit.com/achillesrasquinha/schema/{branch}/models/tree.json'.format(branch = branch))
-            if  response.ok:
-                tree = response.json()
+    def get(self, name, refresh = False):
+        typepath      = os.path.join(self.metapath, name)
 
-                with open(treepath, mode = 'w') as f:
-                    json.dump(tree, f, indent = indent)
-            else:
-                response.raise_for_status()
-
-    def get(self, type_, branch = None, refresh = False):
-        branch   = assign_if_none(branch, 'dev')
-
-        typepath = os.path.join(self.metapath, type_)
         if not os.path.exists(typepath) or refresh:
-            response = requests.get('https://cdn.rawgit.com/achillesrasquinha/schema/{branch}/models/{type_}.json'.format(branch = branch, type_ = type_))
+            response  = requests.get('https://cdn.rawgit.com/achillesrasquinha/schema/{version}/models/{name}.json'.format(
+                version = self.branch, 
+                name    = name
+            ))
+            
             if response.ok:
                 data = response.json()
 
@@ -49,7 +48,7 @@ class Cache(object):
                     json.dump(data, f)
             else:
                 if response.status_code == 404:
-                    raise SchemaError('Schema {type_} not found.'.format(type_ = type_))
+                    raise SchemaError('Schema {name} not found.'.format(name = name))
                 else:
                     response.raise_for_status()
         else:
