@@ -4,6 +4,12 @@
     <h4>metadata, for humans</h4>
 </div>
 
+<div align="center">
+    <a href="https://travis-ci.org/achillesrasquinha/schema">
+        <img src="https://img.shields.io/travis/achillesrasquinha/schema.svg">
+    </a>
+</div>
+
 <p align="justify">
     <b>schema</b> helps you create objects, <em>on the fly</em>.
 </p>
