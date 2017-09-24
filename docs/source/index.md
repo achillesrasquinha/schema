@@ -1,4 +1,4 @@
 # schema
-> :bookmark: Metadata, for humans.
+> 🔖 Metadata, for humans.
 
 Release: v\ |version|
