@@ -7,4 +7,4 @@ tqdm
 sqlalchemy
 pytest
 pytest-cov
-coveralls
+codecov
