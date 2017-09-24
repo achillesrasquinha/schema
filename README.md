@@ -47,7 +47,7 @@ $ pip install schemapy
 
 ##### Human-Readable Schemas
 ```python
-# @object - Schema
+# @object - schema
 {
     # @attribute   - name
     # @type        - string
@@ -55,10 +55,10 @@ $ pip install schemapy
     "name": "Thing",
     # @attribute   - prop
     # @description - Properties the schema possesses.
-    # @type        - array<object>
+    # @type        - array<property>
     "prop":
     [
-        # @object  - Property
+        # @object  - property
         {
             # @attribute   - name
             # @type        - string
