@@ -1,7 +1,6 @@
 .PHONY: build
 
 PYTHON   ?= python
-IPYTHON  ?= ipython
 
 BASEDIR   = $(realpath .)
 PACKAGE   = schema
@@ -23,9 +22,6 @@ install:
 	$(PYTHON) setup.py install
 
 	make clean
-
-console:
-	$(IPYTHON)
 
 test:
 	make install
