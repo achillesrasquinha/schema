@@ -23,6 +23,7 @@
 ### Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Features](#features)
 * [License](#license)
 
 #### Installation
@@ -49,6 +50,9 @@ $ pip install schemapy
 >>> db = schema.DB('sqlite', 'foo.db')
 >>> db.insert(thing)
 ```
+
+#### Features
+* Support for Python **2.7+** and **3.3+**
 
 #### License
 This repository has been released under the [MIT License](LICENSE)

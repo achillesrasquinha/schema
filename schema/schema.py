@@ -1,5 +1,5 @@
 # imports - compatibility imports
-from __future__ import absolute_import
+from __future__          import absolute_import
 
 # imports - standard imports
 from collections         import MutableMapping
@@ -10,7 +10,7 @@ from schema.error        import raise_not_implemented_error
 from schema.util.checker import check_str
 
 class Schema(MutableMapping):
-    def __init__(self, name, props = None, refresh = False, version = None):
+    def __init__(self, name, props = None, refresh = False, version = None, verbose = False):
         check_str(type_, raise_err = True)
 
         if props  != None:
