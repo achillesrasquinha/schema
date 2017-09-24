@@ -38,8 +38,5 @@ docs:
 
 	make clean-py
 
-run:
-	cd bot && gunicorn bot.app:app
-
 all:
 	make install test clean
