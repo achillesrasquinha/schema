@@ -36,7 +36,7 @@ class SchemaBot(object):
                             meta['memb']   = [ ]
 
                             if   isinstance(domains, dict):
-                                domain     = domain['@id'].replace('http://schema.org/', '')
+                                domain     = domains['@id'].replace('http://schema.org/', '')
                                 meta['memb'].append(domain)
                             elif isinstance(domains, list):
                                 for d in domains:
@@ -44,7 +44,7 @@ class SchemaBot(object):
                                     meta['memb'].append(domain)
                             else:
                                 warnings.warn('Unknown type {type_} for domains {domains}'.format(
-                                    type_   = type(domains)
+                                    type_   = type(domains),
                                     domains = domains
                                 ))
                         

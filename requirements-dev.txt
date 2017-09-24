@@ -8,6 +8,7 @@ Sphinx
 six
 requests
 tqdm
+sqlalchemy
 pytest
 pytest-cov
 coveralls
