@@ -8,6 +8,12 @@
     <a href="https://travis-ci.org/achillesrasquinha/schema">
         <img src="https://img.shields.io/travis/achillesrasquinha/schema.svg">
     </a>
+    <a href="https://saythanks.io/to/achillesrasquinha">
+        <img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg">
+    </a>
+    <a href="https://paypal.me/achillesrasquinha">
+        <img src="https://img.shields.io/badge/donate-%24-f44336.svg">
+    </a>
 </div>
 
 <p align="justify">
@@ -24,7 +30,7 @@
 To install **schema**, simply use [`pip`](https://pip.pypa.io):
 
 ```console
-$ pip install frappe-schema
+$ pip install schemapy
 ```
 
 #### Usage
