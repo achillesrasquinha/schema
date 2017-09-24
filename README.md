@@ -8,6 +8,9 @@
     <a href="https://travis-ci.org/achillesrasquinha/schema">
         <img src="https://img.shields.io/travis/achillesrasquinha/schema.svg">
     </a>
+    <a href='http://schema.readthedocs.io/en/latest/?badge=latest'>
+        <img src='https://readthedocs.org/projects/schema/badge/?version=latest'/>
+    </a>
     <a href="https://saythanks.io/to/achillesrasquinha">
         <img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg">
     </a>
