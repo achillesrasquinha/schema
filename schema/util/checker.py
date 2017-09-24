@@ -21,6 +21,23 @@ def check_type(instance, expected, raise_err = False, expected_name = None):
     else:
         return True
 
+def check_uint(*isinstance, **kwargs):
+    raise_err = assign_if_none(kwargs.get('raise_err'), False)
+    bools     = [False] * len(instances)
+
+    for i, instance in enumerate(instances):
+        bools[i]  = check_type(instance, int, raise_err = raise_err, expected_name = 'int')
+
+        if instance < 0:
+            if raise_err:
+                raise ValueError('{number} is negative.')
+            else:
+                bools[i] &= False
+        else:
+            bools[i] &= True
+
+    return bools[0] if len(instances) == 1 else bools
+
 def check_uint16(*isinstances, **kwargs):
     raise_err = assign_if_none(kwargs.get('raise_err'), False)
     bools     = [False] * len(instances)

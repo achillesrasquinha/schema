@@ -12,6 +12,9 @@ from schema.util.checker import check_str, check_mapping
 import schema
 
 class Schema(MutableMapping):
+    '''
+
+    '''
     def __init__(self, name, props = None, refresh = False, version = None, verbose = False):
         check_str(name, raise_err = True)
 

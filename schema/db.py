@@ -12,9 +12,9 @@ def build_url(dialect, database, host = '', port = None, username = '', password
 
 class DB(object):
     def __init__(self, dialect, database, host = '', port = None, user = '', password = ''):
-        check_str(dialect, database, host, user, password)
+        check_str(dialect, database, host, user, password, raise_err = True)
         if port != None:
-            check_uint16(port)
+            check_uint16(port, raise_err = True)
 
         url          = build_url\
         (
