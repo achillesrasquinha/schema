@@ -8,6 +8,10 @@ PACKAGE   = schema
 SOURCEDIR = $(realpath $(PACKAGE))
 DOCSDIR   = $(BASEDIR)/docs
 
+venv:
+	virtualenv .venv/py2 --python=python2
+	virtualenv .venv/py3 --python=python3
+
 clean-py:
 	python setup.py clean
 
@@ -37,6 +41,3 @@ docs:
 	sphinx-build -b html $(DOCSDIR)/source $(DOCSDIR)/build
 
 	make clean-py
-
-all:
-	make install test clean

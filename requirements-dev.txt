@@ -1,5 +1,6 @@
 setuptools
 twine
+virtualenv
 Sphinx
 recommonmark
 six
