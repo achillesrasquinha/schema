@@ -20,13 +20,13 @@
     <b>schema</b> helps you create objects, <em>on the fly</em>.
 </p>
 
-### Table of Contents
+##// Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Features](#features)
 * [License](#license)
 
-#### Installation
+###// Installation
 
 To install **schema**, simply use [`pip`](https://pip.pypa.io):
 
@@ -34,7 +34,7 @@ To install **schema**, simply use [`pip`](https://pip.pypa.io):
 $ pip install schemapy
 ```
 
-#### Usage
+###// Usage
 
 <p align="justify">
     <b>schema</b> keeps it simple by fetching you human-readable (and minimal) schemas from data <a href="models">models</a> (provided by <a href="http://schema.org">schema.org</a>) updated <a href="https://en.wikipedia.org/wiki/Daily_build">nightly</a>. This ensures that you optionally recieve up-to-date schemas (<em>on the fly</em>) without having <b>schema</b> reinstalled, and speak in the same language with other users too.
@@ -45,64 +45,65 @@ $ pip install schemapy
 >>> thing = schema.Schema('Thing', dict(url = 'http://bit.ly/2fbwx4m'))
 ```
 
-##### Human-Readable Schemas
-```python
-# @object - schema
+####// Human-Readable Schemas
+```js
+// @object - schema
 {
-    # @attribute   - name
-    # @type        - string
-    # @description - Name/Type of the schema.
+    // @attribute   - name
+    // @type        - string
+    // @description - Name/Type of the schema.
     "name": "Thing",
-    # @attribute   - prop
-    # @description - Properties the schema possesses.
-    # @type        - array<property>
+    // @attribute   - prop
+    // @description - Properties the schema possesses.
+    // @type        - array<property>
     "prop":
     [
-        # @object  - property
+        // @object  - property
         {
-            # @attribute   - name
-            # @type        - string
-            # @description - Name of the property.
+            // @attribute   - name
+            // @type        - string
+            // @description - Name of the property.
             "name": "result",
-            # @attribute   - desc
-            # @type        - string
-            # @description - Description for the property.
+            // @attribute   - desc
+            // @type        - string
+            // @description - Description for the property.
             "desc": "The result produced in the action. e.g. John wrote a book.",
-            # @attribute   - name
-            # @type        - array<string>
-            # @description - Type(s) the value of the property can be.
+            // @attribute   - name
+            // @type        - array<string>
+            // @description - Type(s) the value of the property can be.
             "type": ["Thing"]
         },
-        # ...Other Properties
+        // ...Other Properties
     ],
-    # @attribute   - from
-    # @description - Parents of the schema.
-    # @type        - object
+    // @attribute   - from
+    // @description - Parents of the schema.
+    // @type        - object
     "from":
     {
-        # Parent 1
+        // Parent 1
         "Thing":
         [
-            # Properties inherited from the parent.
+            // Properties inherited from the parent.
             {
                 "name": "url",
                 "desc": "URL of the item.",
                 "type": ["URL"]
             },
-            # ...Other Properties
+            // ...Other Properties
         ]
+        // ...Other Parents
     }
 }
 ```
 
-##### Seamless Object-Relational Mapping (TODO)
+####// Seamless Object-Relational Mapping (TODO)
 ```python
 >>> db = schema.DB('sqlite', 'foo.db')
 >>> db.insert(thing)
 ```
 
-#### Features
+###// Features
 * Support for Python **2.7+** and **3.3+**
 
-#### License
+###// License
 This repository has been released under the [MIT License](LICENSE)
