@@ -8,7 +8,8 @@ from collections         import MutableMapping
 # imports - module imports
 from schema.cache        import Cache
 from schema.error        import raise_not_implemented_error
-from schema.util.checker import check_str
+from schema.util.checker import check_str, check_mapping
+import schema
 
 class Schema(MutableMapping):
     def __init__(self, name, props = None, refresh = False, version = None, verbose = False):
@@ -17,12 +18,14 @@ class Schema(MutableMapping):
         if props  != None:
             check_mapping(props, raise_err = True)
 
+            schema.validate(name, props)
+
         self.cache = Cache(version = version)
         self.cache.create()
 
-        self.store = self.cache.get(name, refresh = refresh)
+        self.store = self.cache.get(name, refresh = refresh, verbose = verbose)
         self.name  = name
-        
+
     def __getitem__(self, key):
         raise_not_implemented_error()
 

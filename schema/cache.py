@@ -32,7 +32,7 @@ class Cache(object):
 
         makedirs(self.metapath, exists_ok = exists_ok)
 
-    def get(self, name, refresh = False):
+    def get(self, name, refresh = False, verbose = False):
         typepath      = os.path.join(self.metapath, name)
 
         if not os.path.exists(typepath) or refresh:
