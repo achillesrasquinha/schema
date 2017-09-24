@@ -12,10 +12,10 @@
         <img src='https://readthedocs.org/projects/schema/badge/?version=latest'/>
     </a>
     <a href="https://saythanks.io/to/achillesrasquinha">
-        <img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg">
+        <img src="https://img.shields.io/badge/Say%20Thanks-🦉-1EAEDB.svg">
     </a>
     <a href="https://paypal.me/achillesrasquinha">
-        <img src="https://img.shields.io/badge/donate-%24-f44336.svg">
+        <img src="https://img.shields.io/badge/donate-💵-f44336.svg">
     </a>
 </div>
 
