@@ -6,3 +6,4 @@ from __future__ import absolute_import
 from schema.error  import SchemaError, SchemaValidationError
 from schema.cache  import Cache
 from schema.schema import Schema
+from schema.db     import DB

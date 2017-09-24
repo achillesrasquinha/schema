@@ -20,8 +20,18 @@ def check_type(instance, expected, raise_err = False, expected_name = None):
     else:
         return True
 
-def check_str(instance, raise_err = False):
-    return check_type(instance, six.string_types, raise_err = raise_err, expected_name = 'str')
+def check_str(*instances, raise_err = False):
+    bools = [False] * len(instances)
 
-def check_mapping(instance, raise_err = False):
-    return check_type(instance, Mapping, raise_err = raise_err, expected_name = 'dict-like')
+    for i, instance in enumerate(instances):
+        bools[i] = check_type(instance, six.string_types, raise_err = raise_err, expected_name = 'str')
+
+    return bools[0] if len(instances) == 1 else bools
+
+def check_mapping(*instances, raise_err = False):
+    bools = [False] * len(instances)
+
+    for i, instance in enumerate(instances):
+        bools[i] = check_type(instance, Mapping, raise_err = raise_err, expected_name = 'dict-like')
+
+    return bools[0] if len(instances) == 1 else bools

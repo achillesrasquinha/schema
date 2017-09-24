@@ -28,16 +28,21 @@ def test_check_type():
 def test_check_str():
     assert check_str('foo') == True
     assert check_str("bar") == True
+    assert all(check_str('foo', "bar")) == True
+    assert any(check_str('foo', 12345)) == True
 
     assert check_str(12345) == False
     assert check_str([123]) == False
+    assert all(check_str(12345, [123])) == False
 
     assert check_str('foo', raise_err = True) == True
     assert check_str("bar", raise_err = True) == True
+    assert all(check_str('foo', "bar", raise_err = True)) == True
 
     with pytest.raises(TypeError):
         check_str(12345, raise_err = True)
         check_str([123], raise_err = True)
+        check_str(12345, [123], raise_err = True)
 
 def test_check_mapping():
     assert check_mapping({    }) == True
