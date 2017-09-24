@@ -6,16 +6,16 @@
 
 <div align="center">
     <a href="https://travis-ci.org/achillesrasquinha/schema">
-        <img src="https://img.shields.io/travis/achillesrasquinha/schema.svg">
+        <img src="https://img.shields.io/travis/achillesrasquinha/schema.svg?style=flat-square">
     </a>
     <a href='http://schema.readthedocs.io/en/latest/?badge=latest'>
-        <img src='https://readthedocs.org/projects/schema/badge/?version=latest'/>
+        <img src='https://readthedocs.org/projects/schema/badge/?style=flat-square&version=latest'/>
     </a>
     <a href="https://saythanks.io/to/achillesrasquinha">
-        <img src="https://img.shields.io/badge/Say%20Thanks-🦉-1EAEDB.svg">
+        <img src="https://img.shields.io/badge/Say%20Thanks-🦉-1EAEDB.svg?style=flat-square">
     </a>
     <a href="https://paypal.me/achillesrasquinha">
-        <img src="https://img.shields.io/badge/donate-💵-f44336.svg">
+        <img src="https://img.shields.io/badge/donate-💵-f44336.svg?style=flat-square">
     </a>
 </div>
 
