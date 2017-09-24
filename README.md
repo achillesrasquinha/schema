@@ -103,6 +103,9 @@ $ pip install schemapy
 ```
 
 #### Features
+* Human-Readable Schemas
+* Schema Validation
+* Seamless Object-Relational Mapping with DB integration
 * Support for Python **2.7+** and **3.3+**
 
 #### License
