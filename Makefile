@@ -1,10 +1,9 @@
 .PHONY: build
 
 PYTHON   ?= python
-IPYTHON  ?= ipython
 
 BASEDIR   = $(realpath .)
-PACKAGE   = schema
+PACKAGE   = bot
 SOURCEDIR = $(realpath $(PACKAGE))
 
 MODELSDIR = $(realpath models)
@@ -23,9 +22,6 @@ install:
 	$(PYTHON) setup.py install
 
 	make clean
-
-console:
-	$(IPYTHON)
 
 test:
 	make install

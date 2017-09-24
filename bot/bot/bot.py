@@ -33,10 +33,14 @@ class SchemaBot(object):
                             if   isinstance(parents, dict):
                                 parent     = sanitize_id(parents['@id'])
                                 meta['from'].append(parent)
-
                             elif isinstance(parents, list):
                                 for p in parents:
                                     parent = sanitize_id(p['@id'])
+                            else:
+                                warnings.warn('Unknown type {type_} for parents {parents}'.format(
+                                    type_   = type(parents),
+                                    domains = parents
+                                ))
 
                         klass.append(meta)
                         
