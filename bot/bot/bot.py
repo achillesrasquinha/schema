@@ -4,6 +4,11 @@ import warnings
 # imports - third-party imports
 import requests
 
+def sanitize_id(id):
+    sanitized = id.replace('http://schema.org/', '')
+
+    return sanitized
+
 class SchemaBot(object):
     def run(self):
         response  = requests.get('http://schema.org/version/latest/schema.jsonld')
@@ -22,7 +27,16 @@ class SchemaBot(object):
                         meta['desc'] = node['rdfs:comment'] if 'rdfs:comment' in node else ""
 
                         if 'rdfs:subClassOf' in node:
-                            pass
+                            parents        = node['rdfs:subClassOf']
+                            meta['from']   = [ ]
+
+                            if   isinstance(parents, dict):
+                                parent     = sanitize_id(parents['@id'])
+                                meta['from'].append(parent)
+
+                            elif isinstance(parents, list):
+                                for p in parents:
+                                    parent = sanitize_id(p['@id'])
 
                         klass.append(meta)
                         
@@ -36,11 +50,11 @@ class SchemaBot(object):
                             meta['memb']   = [ ]
 
                             if   isinstance(domains, dict):
-                                domain     = domains['@id'].replace('http://schema.org/', '')
+                                domain     = sanitize_id(domains['@id'])
                                 meta['memb'].append(domain)
                             elif isinstance(domains, list):
                                 for d in domains:
-                                    domain = d['@id'].replace('http://schema.org/', '')
+                                    domain = sanitize_id(d['@id'])
                                     meta['memb'].append(domain)
                             else:
                                 warnings.warn('Unknown type {type_} for domains {domains}'.format(
