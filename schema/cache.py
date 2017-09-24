@@ -37,7 +37,7 @@ class Cache(object):
 
         if not os.path.exists(typepath) or refresh:
             response  = requests.get('https://cdn.rawgit.com/achillesrasquinha/schema/{version}/models/{name}.json'.format(
-                version = self.branch, 
+                version = self.version,
                 name    = name
             ))
             
