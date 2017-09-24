@@ -20,13 +20,13 @@
     <b>schema</b> helps you create objects, <em>on the fly</em>.
 </p>
 
-##// Table of Contents
+### Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [Features](#features)
 * [License](#license)
 
-###// Installation
+#### Installation
 
 To install **schema**, simply use [`pip`](https://pip.pypa.io):
 
@@ -34,7 +34,7 @@ To install **schema**, simply use [`pip`](https://pip.pypa.io):
 $ pip install schemapy
 ```
 
-###// Usage
+#### Usage
 
 <p align="justify">
     <b>schema</b> keeps it simple by fetching you human-readable (and minimal) schemas from data <a href="models">models</a> (provided by <a href="http://schema.org">schema.org</a>) updated <a href="https://en.wikipedia.org/wiki/Daily_build">nightly</a>. This ensures that you optionally recieve up-to-date schemas (<em>on the fly</em>) without having <b>schema</b> reinstalled, and speak in the same language with other users too.
@@ -45,7 +45,7 @@ $ pip install schemapy
 >>> thing = schema.Schema('Thing', dict(url = 'http://bit.ly/2fbwx4m'))
 ```
 
-####// Human-Readable Schemas
+##### Human-Readable Schemas
 ```js
 // @object - schema
 {
@@ -96,14 +96,14 @@ $ pip install schemapy
 }
 ```
 
-####// Seamless Object-Relational Mapping (TODO)
+##### Seamless Object-Relational Mapping (TODO)
 ```python
 >>> db = schema.DB('sqlite', 'foo.db')
 >>> db.insert(thing)
 ```
 
-###// Features
+#### Features
 * Support for Python **2.7+** and **3.3+**
 
-###// License
+#### License
 This repository has been released under the [MIT License](LICENSE)
