@@ -46,50 +46,50 @@ $ pip install schemapy
 ```
 
 ##### Human-Readable Schemas
-```json
-// @object - Schema
+```python
+# @object - Schema
 {
-    // @attribute   - name
-    // @type        - string
-    // @description - Name/Type of the schema.
+    # @attribute   - name
+    # @type        - string
+    # @description - Name/Type of the schema.
     "name": "Thing",
-    // @attribute   - prop
-    // @description - Properties the schema possesses.
-    // @type        - array<object>
+    # @attribute   - prop
+    # @description - Properties the schema possesses.
+    # @type        - array<object>
     "prop":
     [
-        // @object  - Property
+        # @object  - Property
         {
-            // @attribute   - name
-            // @type        - string
-            // @description - Name of the property.
+            # @attribute   - name
+            # @type        - string
+            # @description - Name of the property.
             "name": "result",
-            // @attribute   - desc
-            // @type        - string
-            // @description - Description for the property.
+            # @attribute   - desc
+            # @type        - string
+            # @description - Description for the property.
             "desc": "The result produced in the action. e.g. John wrote a book.",
-            // @attribute   - name
-            // @type        - array<string>
-            // @description - Type(s) the value of the property can be.
+            # @attribute   - name
+            # @type        - array<string>
+            # @description - Type(s) the value of the property can be.
             "type": ["Thing"]
         },
-        // ...Other Properties
+        # ...Other Properties
     ],
-    // @attribute   - from
-    // @description - Parents of the schema.
-    // @type        - object
+    # @attribute   - from
+    # @description - Parents of the schema.
+    # @type        - object
     "from":
     {
-        // Parent 1
+        # Parent 1
         "Thing":
         [
-            // Properties inherited from the parent.
+            # Properties inherited from the parent.
             {
                 "name": "url",
                 "desc": "URL of the item.",
                 "type": ["URL"]
             },
-            // ...Other Properties
+            # ...Other Properties
         ]
     }
 }
