@@ -2,6 +2,7 @@
 .PHONY: docs
 
 PYTHON   ?= python
+IPYTHON  ?= ipython
 
 BASEDIR   = $(realpath .)
 PACKAGE   = schema
@@ -36,6 +37,9 @@ test:
 	py.test --cov=$(SOURCEDIR)
 
 	python setup.py clean
+
+console:
+	$(IPYTHON)
 
 docs:
 	sphinx-build -b html $(DOCSDIR)/source $(DOCSDIR)/build

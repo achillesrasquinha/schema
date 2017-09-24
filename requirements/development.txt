@@ -1,3 +1,4 @@
 setuptools
 twine
 virtualenv
+ipython

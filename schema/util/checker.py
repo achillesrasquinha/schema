@@ -1,5 +1,6 @@
 # imports - compatibility imports
 import six
+from six.moves.urllib.parse import urlparse
 
 # imports - standard imports
 from collections import Mapping
@@ -78,3 +79,23 @@ def check_range(number, min_, max_, raise_err = False):
             return False
     else:
         return True
+
+def check_url(*urls, **kwargs):
+    check_str(*urls, **kwargs)
+
+    raise_err = assign_if_none(kwargs.get('raise_err'), False)
+    bools     = [False] * len(urls)
+
+    for i, url in enumerate(urls):
+        parse = urlparse(url)
+        if parse.scheme:
+            bools[i] = True
+        else:
+            if raise_err:
+                raise ValueError('{url} not a valid URL.'.format(
+                    url = url
+                ))
+            else:
+                bools[i] = False
+        
+    return bools[0] if len(urls) == 1 else bools

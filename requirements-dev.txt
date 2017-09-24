@@ -1,6 +1,7 @@
 setuptools
 twine
 virtualenv
+ipython
 Sphinx
 recommonmark
 six
