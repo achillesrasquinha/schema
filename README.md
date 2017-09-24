@@ -101,7 +101,7 @@ $ pip install schemapy
 
 ##### Seamless Object-Relational Mapping (TODO)
 ```python
->>> db = schema.DB('sqlite', 'foo.db')
+>>> db = schema.DB(schema.DB.SQLITE, 'foo.db')
 >>> db.insert(thing)
 ```
 

@@ -20,3 +20,5 @@ source_parsers = \
 source_suffix  = ['.md']
 
 master_doc     = 'index'
+
+html_theme     = 'alabaster'
