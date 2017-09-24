@@ -1,0 +1,10 @@
+setuptools
+twine
+ipython
+Sphinx
+Flask
+Flask-APScheduler
+gunicorn
+pytest
+pytest-cov
+coveralls
