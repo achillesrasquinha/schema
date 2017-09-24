@@ -8,3 +8,4 @@ sqlalchemy
 pytest
 pytest-cov
 codecov
+tox
