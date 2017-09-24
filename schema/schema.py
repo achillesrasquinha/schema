@@ -6,24 +6,26 @@ import pprint
 from collections         import MutableMapping
 
 # imports - module imports
+from schema.dtype        import URL, DTYPES
+from schema.checker      import Checker
 from schema.cache        import Cache
 from schema.error        import raise_not_implemented_error
 from schema.util.checker import check_str, check_mapping
-import schema
 
 class Schema(MutableMapping):
     '''
-        
+        A Schema object.
     '''
     def __init__(self, name, props = None, refresh = False, version = None, verbose = False):
         check_str(name, raise_err = True)
 
+        self.checker = Checker(version = version)
+
         if props  != None:
             check_mapping(props, raise_err = True)
+            checker.check(name, props, refresh = refresh)
 
-            schema.validate(name, props)
-
-        self.cache = Cache(version = version)
+        self.cache   = Cache(version = version)
         self.cache.create()
 
         self.store = self.cache.get(name, refresh = refresh, verbose = verbose)

@@ -5,6 +5,7 @@ from __future__       import absolute_import
 # imports - module imports
 from schema.error   import SchemaError, SchemaValidationError
 from schema.log     import Logger
+from schema.dtype   import URL, DTYPES
 from schema.cache   import Cache
 from schema.checker import Checker
 from schema.schema  import Schema
