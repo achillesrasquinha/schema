@@ -42,18 +42,25 @@ def test_check_str():
     with pytest.raises(TypeError):
         check_str(12345, raise_err = True)
         check_str([123], raise_err = True)
+        check_str("foo", [123], raise_err = True)
         check_str(12345, [123], raise_err = True)
 
 def test_check_mapping():
     assert check_mapping({    }) == True
     assert check_mapping(dict()) == True
+    assert all(check_mapping(dict(), { })) == True
+    assert any(check_mapping(dict(), 123)) == True
 
     assert check_mapping('foo')  == False
     assert check_mapping(12345)  == False
+    assert all(check_mapping('foo', 12345)) == False
 
     assert check_mapping({    }, raise_err = True) == True
     assert check_mapping(dict(), raise_err = True) == True
-
+    assert all(check_mapping(dict(), { }, raise_err = True)) == True
+    
     with pytest.raises(TypeError):
         check_mapping('foo', raise_err = True)
         check_mapping(12345, raise_err = True)
+        check_mapping({   }, 12345, raise_err = True)
+        check_mapping('foo', 12345, raise_err = True)
