@@ -10,3 +10,6 @@ from schema.util.checker import check_str
 class DB(object):
     def __init__(self, dialect, database, user = '', password = ''):
         check_str(dialect, database, user, password)
+
+    def insert(self, instance):
+        pass
