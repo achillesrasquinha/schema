@@ -45,6 +45,56 @@ $ pip install schemapy
 >>> thing = schema.Schema('Thing', dict(url = 'http://bit.ly/2fbwx4m'))
 ```
 
+##### Human-Readable Schemas
+```json
+// @object - Schema
+{
+    // @attribute   - name
+    // @type        - string
+    // @description - Name/Type of the schema.
+    "name": "Thing",
+    // @attribute   - prop
+    // @description - Properties the schema possesses.
+    // @type        - array<object>
+    "prop":
+    [
+        // @object  - Property
+        {
+            // @attribute   - name
+            // @type        - string
+            // @description - Name of the property.
+            "name": "result",
+            // @attribute   - desc
+            // @type        - string
+            // @description - Description for the property.
+            "desc": "The result produced in the action. e.g. John wrote a book.",
+            // @attribute   - name
+            // @type        - array<string>
+            // @description - Type(s) the value of the property can be.
+            "type": ["Thing"]
+        },
+        // ...Other Properties
+    ],
+    // @attribute   - from
+    // @description - Parents of the schema.
+    // @type        - object
+    "from":
+    {
+        // Parent 1
+        "Thing":
+        [
+            // Properties inherited from the parent.
+            {
+                "name": "url",
+                "desc": "URL of the item.",
+                "type": ["URL"]
+            },
+            // ...Other Properties
+        ]
+    }
+}
+```
+
 ##### Seamless Object-Relational Mapping (TODO)
 ```python
 >>> db = schema.DB('sqlite', 'foo.db')
