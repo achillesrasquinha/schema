@@ -1,6 +1,7 @@
 setuptools
 twine
 Sphinx
+recommonmark
 six
 requests
 tqdm

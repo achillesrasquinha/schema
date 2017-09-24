@@ -2,8 +2,9 @@
 # imports - standard imports
 import os
 
-# expose the __version__
-with open('schema/__version__.py') as f:
+basedir = os.path.dirname(__file__)
+srcpath = os.path.join(basedir, 'schema', '__attr__.py')
+with open(srcpath) as f:
     code = f.read()
     exec(code)
 
@@ -12,7 +13,7 @@ def get_long_description(*files):
         pass
 
 def get_dependencies(type_ = None, dirpath = 'requirements'):
-    abspath = os.path.abspath(dirpath)
+    abspath = dirpath if os.path.isabs(dirpath) else os.path.join(basedir, dirpath)
     types   = [os.path.splitext(fname)[0] for fname in os.listdir(abspath)]
 
     if not os.path.exists(abspath):
@@ -39,6 +40,7 @@ def get_dependencies(type_ = None, dirpath = 'requirements'):
 package = dict(
     name             = 'schema',
     version          = __version__,
+    release          = __release__,
     # TODO: description
     description      = '',
     long_description = get_long_description('README.md', 'LICENSE'),

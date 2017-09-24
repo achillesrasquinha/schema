@@ -1,15 +1,18 @@
 .PHONY: build
+.PHONY: docs
 
 PYTHON   ?= python
 
 BASEDIR   = $(realpath .)
 PACKAGE   = schema
 SOURCEDIR = $(realpath $(PACKAGE))
+DOCSDIR   = $(BASEDIR)/docs
 
-MODELSDIR = $(realpath models)
+clean-py:
+	python setup.py clean
 
 clean:
-	python setup.py clean
+	make clean-py
 
 	clear
 
@@ -29,6 +32,11 @@ test:
 	py.test --cov=$(SOURCEDIR)
 
 	python setup.py clean
+
+docs:
+	sphinx-build -b html $(DOCSDIR)/source $(DOCSDIR)/build
+
+	make clean-py
 
 run:
 	cd bot && gunicorn bot.app:app

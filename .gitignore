@@ -1,13 +1,14 @@
 # venv
 .venv
 
-# dist
+# build
 .cache
 build
 dist
 *.egg-info
 *.pyc
 __pycache__
+docs/build
 
 # misc
 .vscode
