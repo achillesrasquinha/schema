@@ -1,7 +1,10 @@
 # imports - compatibility imports
 from __future__          import absolute_import
+from six                 import iteritems
 
 # imports - module imports
+from schema.error        import SchemaValidationError
+from schema.cache        import Cache
 from schema.util.checker import check_str, check_mapping
 
 class Checker(object):
@@ -15,3 +18,23 @@ class Checker(object):
 
         meta = self.cache.get(name, refresh = refresh, verbose = verbose)
 
+        for key, value in iteritems(props):
+            for prop in meta['prop']:
+                if key in prop['name']:
+                    pass
+            else:
+                hasprop = False
+                for _, pprops in iteritems(meta['from']):
+                    for prop in pprops:
+                        if key in prop['name']:
+                            hasprop = True
+                            break
+                
+                if not hasprop:
+                    if raise_err:
+                        raise SchemaValidationError('No such prop {key} found for schema {name}.'.format(
+                            key  = key,
+                            name = name
+                        ))
+                    else:
+                        pass

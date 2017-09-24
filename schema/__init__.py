@@ -10,8 +10,8 @@ from schema.checker import Checker
 from schema.schema  import Schema
 from schema.db      import DB
 
-def check(name, props, raise_err = False):
+def check(name, props, raise_err = False, verbose = False):
     checker = Checker()
-    result  = checker.check(name, props, raise_err = raise_err)
+    result  = checker.check(name, props, raise_err = raise_err, verbose = verbose)
 
     return result
