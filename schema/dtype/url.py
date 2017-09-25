@@ -1,3 +1,6 @@
+# imports - standard imports
+from __future__          import absolute_import
+
 # imports - module imports
 from schema.util.checker import check_url
 

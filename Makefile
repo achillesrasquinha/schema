@@ -45,3 +45,5 @@ docs:
 	sphinx-build -b html $(DOCSDIR)/source $(DOCSDIR)/build
 
 	make clean-py
+
+	open $(DOCSDIR)/build/index.html

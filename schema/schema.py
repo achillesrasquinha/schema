@@ -14,23 +14,24 @@ from schema.util.checker import check_str, check_mapping
 
 class Schema(MutableMapping):
     '''
-        A schema object.
+        A dict-like user-created :class:`Schema <schema.Schema>` schema object.
         
+        :param name: A valid schema name. For valid schemas, visit schema.org/docs/full.html
     '''
     def __init__(self, name, props = None, refresh = False, version = None, verbose = False):
         check_str(name, raise_err = True)
 
         self.checker = Checker(version = version)
 
-        if props  != None:
+        if props != None:
             check_mapping(props, raise_err = True)
             checker.check(name, props, refresh = refresh)
 
         self.cache   = Cache(version = version)
         self.cache.create()
 
-        self.store = self.cache.get(name, refresh = refresh, verbose = verbose)
-        self.name  = name
+        self.store   = self.cache.get(name, refresh = refresh, verbose = verbose)
+        self.name    = name
 
     def __getitem__(self, key):
         raise_not_implemented_error()
@@ -53,9 +54,7 @@ class Schema(MutableMapping):
         return string
 
     def __str__(self):
-        string = '<Schema [{name}]>'.format(
-            name = self.name
-        )
+        string = '<Schema [{name}]>'.format(name = self.name)
 
         return string
 
