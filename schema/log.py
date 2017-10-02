@@ -9,4 +9,5 @@ from schema.util.checker import check_str
 
 class Logger(object):
     def __init__(self):
-        pass
+        self.instance = logging.getLogger(__name__)
+        

@@ -38,7 +38,7 @@ def get_dependencies(type_ = None, dirpath = 'requirements'):
         return dependencies
 
 package = dict(
-    name             = 'schema',
+    name             = __name__,
     version          = __version__,
     release          = __release__,
     # TODO: description
