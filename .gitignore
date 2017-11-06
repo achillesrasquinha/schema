@@ -9,6 +9,7 @@ dist
 *.pyc
 __pycache__
 docs/build
+.coverage
 
 # misc
 .vscode
